@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Горка",
+        "variants": [
+            {
+                "rank": "Новичок",
+                "description": "Горка.",
+                "stats": {
+                    "Защита": 30,
+                    "Защита от радиации": 238
+                },
+                "images": [
+                    "images/combat/Gorka/gorka_1.png",
+                    "images/combat/Gorka/gorka_2.png",
+                    "images/combat/Gorka/gorka_3.png",
+                    "images/combat/Gorka/gorka_4.png",
+                    "images/combat/Gorka/gorka_5.png",
+                    "images/combat/Gorka/gorka_6.png",
+                    "images/combat/Gorka/gorka_7.png",
+                    "images/combat/Gorka/gorka_8.png",
+                    "images/combat/Gorka/gorka_9.png",
+                    "images/combat/Gorka/gorka_10.png",
+                    "images/combat/Gorka/gorka_11.png",
+                    "images/combat/Gorka/gorka_12.png",
+                    "images/combat/Gorka/gorka_13.png",
+                    "images/combat/Gorka/gorka_14.png"
+                ]
+            }
+        ]
+    }
+]

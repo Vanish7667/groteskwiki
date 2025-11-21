@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Лаки Чарм",
+    "variants": [
+      {
+        "rank": "A",
+        "description": "Описание ранга A Лаки Чарм",
+        "images": ["images/mixed/luckycharm1.png","images/mixed/luckycharm2.png"],
+        "stats": {"Защита": 12,"Скорость": 5}
+      },
+      {
+        "rank": "B",
+        "description": "Описание ранга B Лаки Чарм",
+        "images": ["images/mixed/luckycharm3.png","images/mixed/luckycharm4.png"],
+        "stats": {"Защита": 15,"Скорость": 6}
+      }
+    ]
+  },
+  {
+    "name": "Бракен",
+    "variants": [
+      {
+        "rank": "A",
+        "description": "Описание ранга A Бракен",
+        "images": ["images/mixed/braken1.png","images/mixed/braken2.png"],
+        "stats": {"Защита": 14,"Скорость": 5}
+      },
+      {
+        "rank": "B",
+        "description": "Описание ранга B Бракен",
+        "images": ["images/mixed/braken3.png","images/mixed/braken4.png"],
+        "stats": {"Защита": 17,"Скорость": 6}
+      }
+    ]
+  },
+  {
+    "name": "Новая заря",
+    "variants": [
+      {
+        "rank": "Сталкер",
+        "description": "Описание ранга Сталкер",
+        "images": ["images/mixed/zarya/zarya1.jpg","images/mixed/zarya/zarya2.jpg","images/mixed/zarya/zarya3.jpg","images/mixed/zarya/zarya4.jpg","images/mixed/zarya/zarya5.jpg"],
+        "stats": {"Защита": 10,"Скорость": 5}
+      },
+      {
+        "rank": "Ветеран",
+        "description": "Описание ранга Ветеран",
+        "images": ["images/mixed/zarya/zarya1.jpg","images/mixed/zarya/zarya2.jpg","images/mixed/zarya/zarya3.jpg","images/mixed/zarya/zarya4.jpg","images/mixed/zarya/zarya5.jpg"],
+        "stats": {"Защита": 15,"Скорость": 6}
+      },
+      {
+        "rank": "Легенда-3",
+        "description": "Описание ранга Легенда-3",
+        "images": ["images/mixed/zarya/zarya1.jpg","images/mixed/zarya/zarya2.jpg","images/mixed/zarya/zarya3.jpg","images/mixed/zarya/zarya4.jpg","images/mixed/zarya/zarya5.jpg"],
+        "stats": {"Защита": 20,"Скорость": 7}
+      }
+    ]
+  }
+]

@@ -1,0 +1,95 @@
+[
+    {
+        "name": "Сева",
+        "variants": [
+            {
+                "rank": "A",
+                "description": "Научный комплект, интеллект +12.",
+                "stats": {
+                    "Интеллект": 12,
+                    "Рад. сопротивление": 20,
+                    "Вес": 5
+                },
+                "images": [
+                    "images/science/3.png",
+                    "images/science/33.jpg"
+                ]
+            },
+            {
+                "rank": "B",
+                "description": "Научный комплект, интеллект +8.",
+                "stats": {
+                    "Интеллект": 8,
+                    "Рад. сопротивление": 15,
+                    "Вес": 4
+                },
+                "images": [
+                    "images/science/3.png",
+                    "images/science/33.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Мирбек",
+        "variants": [
+            {
+                "rank": "A",
+                "description": "Комплект для анализа аномалий, +10 к науке.",
+                "stats": {
+                    "Интеллект": 10,
+                    "Рад. сопротивление": 18,
+                    "Вес": 6
+                },
+                "images": [
+                    "images/science/3.png",
+                    "images/science/22.jpg"
+                ]
+            },
+            {
+                "rank": "B",
+                "description": "Базовый научный комплект, +6 к науке.",
+                "stats": {
+                    "Интеллект": 6,
+                    "Рад. сопротивление": 12,
+                    "Вес": 5
+                },
+                "images": [
+                    "images/science/3.png",
+                    "images/science/33.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Биохазард",
+        "variants": [
+            {
+                "rank": "A",
+                "description": "Комплект для анализа аномалий, +10 к науке.",
+                "stats": {
+                    "Интеллект": 10,
+                    "Рад. сопротивление": 18,
+                    "Вес": 6
+                },
+                "images": [
+                    "images/science/3.png",
+                    "images/science/22.jpg"
+                ]
+            },
+            {
+                "rank": "B",
+                "description": "Базовый научный комплект, +6 к науке.",
+                "stats": {
+                    "Интеллект": 6,
+                    "Рад. сопротивление": 12,
+                    "Вес": 5
+                },
+                "images": [
+                    "images/science/3.png",
+                    "images/science/33.jpg"
+                ]
+            }
+        ]
+    }
+]

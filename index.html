@@ -2,16 +2,99 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Тестовая страница</title>
+    <title>Grotesk Stalker + Артефакты</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Привет, Cloudflare Pages!</h1>
-    <button id="testButton">Нажми меня</button>
+    <h1>Grotesk Stalker</h1>
 
-    <script>
-        document.getElementById('testButton').addEventListener('click', () => {
-            alert('Кнопка работает!');
-        });
-    </script>
+    <div id="top-tabs">
+        <button class="section-btn" data-target="clothes-tab">Комплекты одежды</button>
+        <button class="section-btn active" data-target="artifacts-tab">Калькулятор артефактов</button>
+    </div>
+
+    <div id="main-container">
+
+        <!-- Вкладка одежды -->
+        <div id="clothes-tab" class="tab-content" style="display:none;">
+            <div id="class-column"><h3>Классы одежды</h3></div>
+            <div id="sets-column"><h3>Комплекты</h3></div>
+            <div id="details-column"><h3>Детали комплекта</h3></div>
+        </div>
+
+        <!-- Вкладка артефактов -->
+        <div id="artifacts-tab" class="tab-content" style="display:flex; gap:2%;">
+
+            <!-- Левая колонка -->
+            <div class="artifact-column">
+                <h3>Выбранные артефакты</h3>
+
+                <div style="display:flex; gap:5px; margin-bottom:5px;">
+                    <button id="clear-build">Очистить сборку</button>
+                    <button id="confirm-artifact">Выбрать артефакт</button>
+                    <button id="save-build">Сохранить сборку</button>
+                    <button id="load-build">Загрузить сборку</button>
+                </div>
+
+                <div id="artifact-count">Количество артефактов: 0</div>
+
+                <ul id="selected-artifacts"></ul>
+            </div>
+
+            <!-- Средняя колонка — свойства артефакта -->
+            <div class="artifact-column">
+                <h3>Свойства выбранного артефакта</h3>
+
+                <!-- Контур свойств -->
+                <div id="artifact-properties" class="outlined-box">
+                    Выберите артефакт
+                </div>
+
+                <!-- Управление тиром -->
+                <div class="control-block outlined-box">
+                    <h4>Тир</h4>
+                    <div class="vertical-select">
+                        <div class="value-box" id="tier-value">1</div>
+                        <div class="arrows">
+                            <div class="arrow up" id="tier-up">▲</div>
+                            <div class="arrow down" id="tier-down">▼</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Управление количеством копий -->
+                <div class="control-block outlined-box">
+                    <h4>Копии</h4>
+                    <div class="vertical-select">
+                        <div class="value-box" id="copies-value">1</div>
+                        <div class="arrows">
+                            <div class="arrow up" id="copies-up">▲</div>
+                            <div class="arrow down" id="copies-down">▼</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Правая колонка -->
+            <div class="artifact-column">
+                <h3>Итоговые характеристики</h3>
+                <div id="calculation-result" class="outlined-box">
+                    Итоговые характеристики здесь...
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="artifact-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="text" id="artifact-search" placeholder="Поиск артефактов...">
+            <div id="artifact-list"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
