@@ -381,5 +381,60 @@
                 ]
             }
         ]
-    }
+    },
+    {
+        "name": "ЭОО",
+        "variants": [
+            {
+                "rank": "Легенда 3",
+                "description": "ЭОО.",
+                "stats": {
+                    "Защита": 999,
+                    "Защита от радиации": 999
+                },
+                "images": [
+                    "images/combat/Armor16/Armor16_1.png",
+                    "images/combat/Armor16/Armor16_2.png",
+                    "images/combat/Armor16/Armor16_3.png",
+                    "images/combat/Armor16/Armor16_4.png",
+                    "images/combat/Armor16/Armor16_5.png",
+                    "images/combat/Armor16/Armor16_6.png",
+                    "images/combat/Armor16/Armor16_7.png",
+                    "images/combat/Armor16/Armor16_8.png",
+                    "images/combat/Armor16/Armor16_9.png",
+                    "images/combat/Armor16/Armor16_10.png",
+                    "images/combat/Armor16/Armor16_11.png",
+                    "images/combat/Armor16/Armor16_12.png",
+                    "images/combat/Armor16/Armor16_13.png",
+                    "images/combat/Armor16/Armor16_14.png",
+                    "images/combat/Armor16/Armor16_15.png"
+                ]
+            },
+            {
+                "rank": "Легенда Х",
+                "description": "ЭОО.",
+                "stats": {
+                    "Защита": 999,
+                    "Защита от радиации": 999
+                },
+                "images": [
+                    "images/combat/Armor16/Armor16_1.png",
+                    "images/combat/Armor16/Armor16_2.png",
+                    "images/combat/Armor16/Armor16_3.png",
+                    "images/combat/Armor16/Armor16_4.png",
+                    "images/combat/Armor16/Armor16_5.png",
+                    "images/combat/Armor16/Armor16_6.png",
+                    "images/combat/Armor16/Armor16_7.png",
+                    "images/combat/Armor16/Armor16_8.png",
+                    "images/combat/Armor16/Armor16_9.png",
+                    "images/combat/Armor16/Armor16_10.png",
+                    "images/combat/Armor16/Armor16_11.png",
+                    "images/combat/Armor16/Armor16_12.png",
+                    "images/combat/Armor16/Armor16_13.png",
+                    "images/combat/Armor16/Armor16_14.png",
+                    "images/combat/Armor16/Armor16_15.png"
+                ]
+            }
+        ]
+    },
 ]

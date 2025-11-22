@@ -1,31 +1,89 @@
 [
     {
-        "name": "Сева",
+        "name": "Биохазард",
         "variants": [
             {
-                "rank": "A",
-                "description": "Научный комплект, интеллект +12.",
+                "rank": "Ветеран",
+                "description": "Биохазард.",
                 "stats": {
-                    "Интеллект": 12,
-                    "Рад. сопротивление": 20,
-                    "Вес": 5
+                    "Защита": 999,
+                    "Защита от радиации": 999
                 },
                 "images": [
-                    "images/science/3.png",
-                    "images/science/33.jpg"
+                    "images/science/Biohazard/Biohazard_1.png",
+                    "images/science/Biohazard/Biohazard_2.png",
+                    "images/science/Biohazard/Biohazard_3.png"
                 ]
             },
             {
-                "rank": "B",
-                "description": "Научный комплект, интеллект +8.",
+                "rank": "Легенда 3",
+                "description": "Биохазард.",
                 "stats": {
-                    "Интеллект": 8,
-                    "Рад. сопротивление": 15,
-                    "Вес": 4
+                    "Защита": 999,
+                    "Защита от радиации": 999
                 },
                 "images": [
-                    "images/science/3.png",
-                    "images/science/33.jpg"
+                    "images/science/Biohazard/Biohazard_1.png",
+                    "images/science/Biohazard/Biohazard_2.png",
+                    "images/science/Biohazard/Biohazard_3.png"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Тайга",
+        "variants": [
+            {
+                "rank": "Ветеран",
+                "description": "Тайга.",
+                "stats": {
+                    "Защита": 999,
+                    "Защита от радиации": 999
+                },
+                "images": [
+                    "images/science/Taiga/Taiga_1.png",
+                    "images/science/Taiga/Taiga_2.png",
+                    "images/science/Taiga/Taiga_3.png"
+                ]
+            },
+            {
+                "rank": "Легенда 3",
+                "description": "Тайга.",
+                "stats": {
+                    "Защита": 999,
+                    "Защита от радиации": 999
+                },
+                "images": [
+                    "images/science/Taiga/Taiga_1.png",
+                    "images/science/Taiga/Taiga_2.png",
+                    "images/science/Taiga/Taiga_3.png"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Ред Деад",
+        "variants": [
+            {
+                "rank": "Ветеран",
+                "description": "Ред Деад.",
+                "stats": {
+                    "Защита": 999,
+                    "Защита от радиации": 999
+                },
+                "images": [
+                    "images/science/Red/Red_1.png"
+                ]
+            },
+            {
+                "rank": "Легенда 3",
+                "description": "Ред Деад.",
+                "stats": {
+                    "Защита": 999,
+                    "Защита от радиации": 999
+                },
+                "images": [
+                    "images/science/Red/Red_1.png"
                 ]
             }
         ]
@@ -34,60 +92,62 @@
         "name": "Мирбек",
         "variants": [
             {
-                "rank": "A",
-                "description": "Комплект для анализа аномалий, +10 к науке.",
+                "rank": "Легенда 3",
+                "description": "Мирбек.",
                 "stats": {
-                    "Интеллект": 10,
-                    "Рад. сопротивление": 18,
-                    "Вес": 6
+                    "Защита": 999,
+                    "Защита от радиации": 999
                 },
                 "images": [
-                    "images/science/3.png",
-                    "images/science/22.jpg"
-                ]
-            },
-            {
-                "rank": "B",
-                "description": "Базовый научный комплект, +6 к науке.",
-                "stats": {
-                    "Интеллект": 6,
-                    "Рад. сопротивление": 12,
-                    "Вес": 5
-                },
-                "images": [
-                    "images/science/3.png",
-                    "images/science/33.jpg"
+                    "images/science/Mirbek/Mirbek_1.png",
+                    "images/science/Mirbek/Mirbek_2.png",
+                    "images/science/Mirbek/Mirbek_3.png",
+                    "images/science/Mirbek/Mirbek_4.png"
                 ]
             }
         ]
     },
     {
-        "name": "Биохазард",
+        "name": "Сева",
         "variants": [
             {
-                "rank": "A",
-                "description": "Комплект для анализа аномалий, +10 к науке.",
+                "rank": "Легенда 3",
+                "description": "Сева.",
                 "stats": {
-                    "Интеллект": 10,
-                    "Рад. сопротивление": 18,
-                    "Вес": 6
+                    "Защита": 999,
+                    "Защита от радиации": 999
                 },
                 "images": [
-                    "images/science/3.png",
-                    "images/science/22.jpg"
+                    "images/science/KS_seva/KS_seva_1.png",
+                    "images/science/KS_seva/KS_seva_2.png",
+                    "images/science/KS_seva/KS_seva_3.png",
+                    "images/science/KS_seva/KS_seva_4.png",
+                    "images/science/KS_seva/KS_seva_5.png",
+                    "images/science/KS_seva/KS_seva_6.png",
+                    "images/science/KS_seva/KS_seva_7.png",
+                    "images/science/KS_seva/KS_seva_8.png",
+                    "images/science/KS_seva/KS_seva_9.png",
+                    "images/science/KS_seva/KS_seva_10.png"
                 ]
             },
             {
-                "rank": "B",
-                "description": "Базовый научный комплект, +6 к науке.",
+                "rank": "Легенда Х",
+                "description": "Сева.",
                 "stats": {
-                    "Интеллект": 6,
-                    "Рад. сопротивление": 12,
-                    "Вес": 5
+                    "Защита": 999,
+                    "Защита от радиации": 999
                 },
                 "images": [
-                    "images/science/3.png",
-                    "images/science/33.jpg"
+                    "images/science/KS_seva/KS_seva_1.png",
+                    "images/science/KS_seva/KS_seva_2.png",
+                    "images/science/KS_seva/KS_seva_3.png",
+                    "images/science/KS_seva/KS_seva_4.png",
+                    "images/science/KS_seva/KS_seva_5.png",
+                    "images/science/KS_seva/KS_seva_6.png",
+                    "images/science/KS_seva/KS_seva_7.png",
+                    "images/science/KS_seva/KS_seva_8.png",
+                    "images/science/KS_seva/KS_seva_9.png",
+                    "images/science/KS_seva/KS_seva_10.png"
                 ]
             }
         ]

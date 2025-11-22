@@ -1,59 +1,44 @@
 [
-  {
-    "name": "Лаки Чарм",
-    "variants": [
-      {
-        "rank": "A",
-        "description": "Описание ранга A Лаки Чарм",
-        "images": ["images/mixed/luckycharm1.png","images/mixed/luckycharm2.png"],
-        "stats": {"Защита": 12,"Скорость": 5}
-      },
-      {
-        "rank": "B",
-        "description": "Описание ранга B Лаки Чарм",
-        "images": ["images/mixed/luckycharm3.png","images/mixed/luckycharm4.png"],
-        "stats": {"Защита": 15,"Скорость": 6}
-      }
-    ]
-  },
-  {
-    "name": "Бракен",
-    "variants": [
-      {
-        "rank": "A",
-        "description": "Описание ранга A Бракен",
-        "images": ["images/mixed/braken1.png","images/mixed/braken2.png"],
-        "stats": {"Защита": 14,"Скорость": 5}
-      },
-      {
-        "rank": "B",
-        "description": "Описание ранга B Бракен",
-        "images": ["images/mixed/braken3.png","images/mixed/braken4.png"],
-        "stats": {"Защита": 17,"Скорость": 6}
-      }
-    ]
-  },
-  {
-    "name": "Новая заря",
-    "variants": [
-      {
-        "rank": "Сталкер",
-        "description": "Описание ранга Сталкер",
-        "images": ["images/mixed/zarya/zarya1.jpg","images/mixed/zarya/zarya2.jpg","images/mixed/zarya/zarya3.jpg","images/mixed/zarya/zarya4.jpg","images/mixed/zarya/zarya5.jpg"],
-        "stats": {"Защита": 10,"Скорость": 5}
-      },
-      {
-        "rank": "Ветеран",
-        "description": "Описание ранга Ветеран",
-        "images": ["images/mixed/zarya/zarya1.jpg","images/mixed/zarya/zarya2.jpg","images/mixed/zarya/zarya3.jpg","images/mixed/zarya/zarya4.jpg","images/mixed/zarya/zarya5.jpg"],
-        "stats": {"Защита": 15,"Скорость": 6}
-      },
-      {
-        "rank": "Легенда-3",
-        "description": "Описание ранга Легенда-3",
-        "images": ["images/mixed/zarya/zarya1.jpg","images/mixed/zarya/zarya2.jpg","images/mixed/zarya/zarya3.jpg","images/mixed/zarya/zarya4.jpg","images/mixed/zarya/zarya5.jpg"],
-        "stats": {"Защита": 20,"Скорость": 7}
-      }
-    ]
-  }
+    {
+        "name": "Лаки Чарм",
+        "variants": [
+            {
+                "rank": "Легенда 3",
+                "description": "Лаки Чарм",
+                "images": [
+                    "images/mixed/LuckyCharm/LuckyCharm_1.png",
+                    "images/mixed/LuckyCharm/LuckyCharm_2.png",
+                    "images/mixed/LuckyCharm/LuckyCharm_3.png",
+                    "images/mixed/LuckyCharm/LuckyCharm_4.png",
+                    "images/mixed/LuckyCharm/LuckyCharm_5.png",
+                    "images/mixed/LuckyCharm/LuckyCharm_6.png",
+                    "images/mixed/LuckyCharm/LuckyCharm_7.png",
+                    "images/mixed/LuckyCharm/LuckyCharm_8.png"
+                ],
+                "stats": {
+                    "Защита": 999,
+                    "Скрытность": 999
+                }
+            }
+        ]
+    },
+    {
+        "name": "Бракен",
+        "variants": [
+            {
+                "rank": "Легенда Х",
+                "description": "Описание ранга A Бракен",
+                "images": [
+                    "images/mixed/Bracken/Bracken_1.png",
+                    "images/mixed/Bracken/Bracken_2.png",
+                    "images/mixed/Bracken/Bracken_3.png",
+                    "images/mixed/Bracken/Bracken_4.png"
+                ],
+                "stats": {
+                    "Защита": 999,
+                    "Скрытность": 999
+                }
+            }
+        ]
+    }
 ]
