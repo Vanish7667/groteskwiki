@@ -1,0 +1,80 @@
+/* Контейнер для контента и сайдбара */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* Сайдбар слева */
+.sidebar {
+    flex: 0 0 250px;
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-left: 4px solid #ffb000;
+    border-radius: 5px;
+}
+
+/* Кнопка магазина */
+.sidebar-button {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ffb000;
+    color: #111111;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.sidebar-button:hover {
+    background-color: #ffaa00;
+}
+
+/* Блок информации о серверах */
+.server-info h3 {
+    color: #ffb000;
+    margin-bottom: 10px;
+}
+
+.server-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.server-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #444;
+}
+
+.server-list li strong {
+    color: #ffb000;
+}
+
+/* Основной контент */
+main#content {
+    flex: 1;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* Кнопка Discord в футере */
+.footer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffb000; /* золотой фон, как кнопка магазина */
+    color: #111111;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.footer-button:hover {
+    background-color: #ffaa00; /* немного светлее при наведении */
+}

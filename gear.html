@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Снаряжение — GroteskStalker PvE Wiki</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/gear.css">
+</head>
+<body>
+
+<header>
+    <h1>GroteskStalker PvE</h1>
+</header>
+
+<nav>
+    <ul class="tabs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="rules.html">Правила</a></li>
+        <li><a href="weapon.html">Оружие</a></li>
+        <li><a href="gear.html" class="active">Снаряжение</a></li>
+        <li><a href="map.html">Карта</a></li>
+        <li><a href="anomalies.html">Аномалии и детекторы</a></li>
+        <li><a href="artifact_calc.html">Калькулятор артефактов</a></li>
+        <li><a href="workbench.html">Верстак</a></li>
+        <li><a href="damage_table.html">Таблица урона</a></li>
+    </ul>
+</nav>
+
+<div class="layout">
+    <!-- Левый сайдбар -->
+    <aside class="sidebar">
+        <h2>Категории</h2>
+        <div id="categories-list" class="categories-list"></div>
+
+        <h2>Комплекты</h2>
+        <div id="kits-list" class="kits-list"></div>
+    </aside>
+
+    <!-- Основной контент -->
+    <main id="content" class="content">
+        <h2 id="kit-title">Выберите комплект слева</h2>
+        <div id="variant-buttons" class="variant-buttons"></div>
+
+        <section id="kit-view" class="kit-view hidden">
+            <div class="media-row">
+                <button id="img-prev" class="img-nav" title="Предыдущая">‹</button>
+                <div id="image-wrap" class="image-wrap">
+                    <img id="main-image" src="" alt="">
+                </div>
+                <button id="img-next" class="img-nav" title="Следующая">›</button>
+            </div>
+            <div class="desc-stats">
+                <div id="kit-desc" class="kit-desc"></div>
+                <div id="kit-stats" class="kit-stats"></div>
+            </div>
+            <div class="kit-slots">
+                <h3>Слоты</h3>
+                <div id="slots-container" class="slots-container"></div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2025 GroteskStalker PvE | <a href="https://discord.gg/P7NQfqMWRq" target="_blank">Discord</a></p>
+</footer>
+
+<script src="js/gear.js"></script>
+</body>
+</html>

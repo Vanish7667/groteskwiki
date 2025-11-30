@@ -1,0 +1,266 @@
+/* Общие стили, как на главной */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #111111;
+    color: #ffb000;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+}
+
+nav {
+    background-color: #222222;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffb000;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: 0.3s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #ffb000;
+    color: #111111;
+    border-radius: 5px;
+}
+
+/* Layout */
+.layout {
+    display: flex;
+    gap: 18px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 12px;
+    align-items: flex-start;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #2a2a2a;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.sidebar h2 {
+    color: #ffb000;
+    margin-bottom: 12px;
+}
+
+.kits-list, .categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.kit-btn, .category-btn {
+    padding: 10px;
+    background-color: #111111;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #e0e0e0;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.kit-btn:hover, .category-btn:hover {
+    background-color: #1a1a1a;
+}
+
+.kit-btn.active, .category-btn.active {
+    background-color: #ffb000;
+    color: #111;
+    font-weight: 700;
+}
+
+/* Ранг комплекта под названием */
+.kit-rank {
+    display: flex;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.kit-rank .rank-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #333; /* серый контур */
+    background-color: #2a2a2a;
+}
+
+/* Основной контент */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-inner {
+    padding: 10px;
+}
+
+.kit-view {
+    background-color: #2a2a2a;
+    padding: 14px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.media-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.img-nav {
+    background: transparent;
+    border: 1px solid #333;
+    color: #e0e0e0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.image-wrap img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.desc-stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.kit-desc, .kit-stats {
+    flex: 1;
+    min-width: 220px;
+}
+
+.kit-desc p, .kit-stats ul {
+    color: #e0e0e0;
+}
+
+/* Слоты */
+.kit-slots {
+    margin-top: 12px;
+}
+
+.slots-title {
+    color: #ffb000;
+    margin: 6px 0;
+}
+
+.slots-container {
+    display: flex;         /* кружки в ряд */
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.slot-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #888888; /* серый контур */
+    background-color: #111;
+}
+
+.slot-circle img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #111111;
+}
+
+footer a {
+    color: #ffb000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптив */
+@media(max-width:900px){
+    .layout {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .content {
+        width: 100%;
+    }
+}
+
+/* Кнопки рангов комплекта */
+.variant-button {
+    padding: 6px 12px;
+    border-radius: 5px;
+    background-color: #111;   /* фон как у остальных кнопок */
+    color: #e0e0e0;           /* текст светлый */
+    border: 1px solid #333;   /* серый контур */
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-bottom: 4px;
+}
+
+.variant-button:hover {
+    background-color: #222;   /* hover эффект */
+}
+
+.variant-button.active {
+    background-color: #ffb000; /* жёлтый фон для активной */
+    color: #111;                /* тёмный текст */
+    border-color: #ffb000;      /* жёлтый контур */
+}
