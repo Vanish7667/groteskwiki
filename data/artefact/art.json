@@ -596,7 +596,7 @@
         "Температура": 60.0,
         "Здоровье": -1,
         "Тир": 1,
-		"images":["images/artefact/mish.png"]
+		"images":["images/artefact/kompas.png"]
       },
       {
         "Имя": "Компас",
@@ -1219,7 +1219,7 @@
         "Вода": -100.0,
         "Еда": -100.0,
         "Тир": 1,
-		"images":["images/artefact/snejinka.png"]
+		"images":["images/artefact/pyzir.png"]
       },
       {
         "Имя": "Пузырь",
@@ -1227,7 +1227,7 @@
         "Вода": -80.0,
         "Еда": -80.0,
         "Тир": 2,
-		"images":["images/artefact/snejinka.png"]
+		"images":["images/artefact/pyzir.png"]
       },
       {
         "Имя": "Пузырь",
@@ -1235,7 +1235,7 @@
         "Вода": -50.0,
         "Еда": -50.0,
         "Тир": 3,
-		"images":["images/artefact/snejinka.png"]
+		"images":["images/artefact/pyzir.png"]
       },
       {
         "Имя": "Пузырь",
@@ -1244,7 +1244,7 @@
         "Вода": -60.0,
         "Еда": -60.0,
         "Тир": 4,
-		"images":["images/artefact/snejinka.png"]
+		"images":["images/artefact/pyzir.png"]
       }
     ]
   },
