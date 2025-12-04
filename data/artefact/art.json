@@ -13,7 +13,7 @@
         "Вода": 34.0,
         "Еда": 34.0,
         "Тир": 1,
-		"images":["images/artefact/angel.jpg"]
+		"images":["images/artefact/angel.png"]
       },
       {
         "Имя": "Ангел",
@@ -26,7 +26,7 @@
         "Вода": 50.0,
         "Еда": 50.0,
         "Тир": 2,
-		"images":["images/artefact/angel.jpg"]
+		"images":["images/artefact/angel.png"]
       },
       {
         "Имя": "Ангел",
@@ -39,7 +39,7 @@
         "Вода": 90.0,
         "Еда": 90.0,
         "Тир": 3,
-		"images":["images/artefact/angel.jpg"]
+		"images":["images/artefact/angel.png"]
       },
       {
         "Имя": "Ангел",
@@ -52,7 +52,7 @@
         "Вода": 180.0,
         "Еда": 180.0,
         "Тир": 4,
-		"images":["images/artefact/angel.jpg"]
+		"images":["images/artefact/angel.png"]
       }
     ]
   },
@@ -67,7 +67,7 @@
         "Выносливость": 30.0,
         "Стойкость": -50.0,
         "Тир": 1,
-		"images":["images/artefact/batar.jpg"]
+		"images":["images/artefact/batar.png"]
       },
       {
         "Имя": "Батарейка",
@@ -77,7 +77,7 @@
         "Выносливость": 45.0,
         "Стойкость": -30.0,
         "Тир": 2,
-		"images":["images/artefact/batar.jpg"]
+		"images":["images/artefact/batar.png"]
       },
       {
         "Имя": "Батарейка",
@@ -87,7 +87,7 @@
         "Выносливость": 60.0,
         "Стойкость": -15.0,
         "Тир": 3,
-		"images":["images/artefact/batar.jpg"]
+		"images":["images/artefact/batar.png"]
       },
       {
         "Имя": "Батарейка",
@@ -97,7 +97,7 @@
         "Выносливость": 100.0,
         "Стойкость": -5.0,
         "Тир": 4,
-		"images":["images/artefact/batar.jpg"]
+		"images":["images/artefact/batar.png"]
       }
     ]
   },
@@ -110,7 +110,7 @@
         "Выносливость": 25.0,
         "Стойкость": -36.0,
         "Тир": 1,
-		"images":["images/artefact/vspiska.jpg"]
+		"images":["images/artefact/vspiska.png"]
       },
       {
         "Имя": "Вспышка",
@@ -118,7 +118,7 @@
         "Выносливость": 35.0,
         "Стойкость": -25.0,
         "Тир": 2,
-		"images":["images/artefact/vspiska.jpg"]
+		"images":["images/artefact/vspiska.png"]
       },
       {
         "Имя": "Вспышка",
@@ -126,7 +126,7 @@
         "Выносливость": 45.0,
         "Стойкость": -15.0,
         "Тир": 3,
-		"images":["images/artefact/vspiska.jpg"]
+		"images":["images/artefact/vspiska.png"]
       },
       {
         "Имя": "Вспышка",
@@ -135,7 +135,7 @@
         "Выносливость": 90.0,
         "Стойкость": -9.0,
         "Тир": 4,
-		"images":["images/artefact/vspiska.jpg"]
+		"images":["images/artefact/vspiska.png"]
       }
     ]
   },
@@ -149,7 +149,7 @@
         "Еда": -20.0,
         "Высота прыжка": 1,
         "Тир": 1,
-		"images":["images/artefact/vivert.jpg"]
+		"images":["images/artefact/vivert.png"]
       },
       {
         "Имя": "Выверт",
@@ -158,7 +158,7 @@
         "Еда": -15.0,
         "Высота прыжка": "1,5",
         "Тир": 2,
-		"images":["images/artefact/vivert.jpg"]
+		"images":["images/artefact/vivert.png"]
       },
       {
         "Имя": "Выверт",
@@ -167,7 +167,7 @@
         "Еда": -10.0,
         "Высота прыжка": 2,
         "Тир": 3,
-		"images":["images/artefact/vivert.jpg"]
+		"images":["images/artefact/vivert.png"]
       },
       {
         "Имя": "Выверт",
@@ -176,7 +176,7 @@
         "Еда": -5.0,
         "Высота прыжка": 4,
         "Тир": 4,
-		"images":["images/artefact/vivert.jpg"]
+		"images":["images/artefact/vivert.png"]
       }
     ]
   },
@@ -190,7 +190,7 @@
         "Выносливость": 15.0,
         "Стойкость": -10.0,
         "Тир": 1,
-		"images":["images/artefact/generator.jpg"]
+		"images":["images/artefact/generator.png"]
       },
       {
         "Имя": "Генератор",
@@ -199,7 +199,7 @@
         "Выносливость": 25.0,
         "Стойкость": -10.0,
         "Тир": 2,
-		"images":["images/artefact/generator.jpg"]
+		"images":["images/artefact/generator.png"]
       },
       {
         "Имя": "Генератор",
@@ -208,7 +208,7 @@
         "Выносливость": 30.0,
         "Стойкость": -10.0,
         "Тир": 3,
-		"images":["images/artefact/generator.jpg"]
+		"images":["images/artefact/generator.png"]
       },
       {
         "Имя": "Генератор",
@@ -218,7 +218,7 @@
         "Выносливость": 60.0,
         "Стойкость": -5.0,
         "Тир": 4,
-		"images":["images/artefact/generator.jpg"]
+		"images":["images/artefact/generator.png"]
       }
     ]
   },
@@ -232,7 +232,7 @@
         "Здоровье": -2.5,
         "Высота прыжка": 2,
         "Тир": 1,
-		"images":["images/artefact/gimlet.jpg"]
+		"images":["images/artefact/gimlet.png"]
       },
       {
         "Имя": "Гимлет",
@@ -241,7 +241,7 @@
         "Здоровье": -2,
         "Высота прыжка": 3,
         "Тир": 2,
-		"images":["images/artefact/gimlet.jpg"]
+		"images":["images/artefact/gimlet.png"]
       },
       {
         "Имя": "Гимлет",
@@ -250,7 +250,7 @@
         "Здоровье": -1,
         "Высота прыжка": 4.5,
         "Тир": 3,
-		"images":["images/artefact/gimlet.jpg"]
+		"images":["images/artefact/gimlet.png"]
       },
       {
         "Имя": "Гимлет",
@@ -261,7 +261,7 @@
         "Здоровье": -0.5,
         "Высота прыжка": 8,
         "Тир": 4,
-		"images":["images/artefact/gimlet.jpg"]
+		"images":["images/artefact/gimlet.png"]
       }
     ]
   },
@@ -276,7 +276,7 @@
         "Здоровье": -1.5,
         "Шанс на порез": 20.0,
         "Тир": 1,
-		"images":["images/artefact/glas.jpg"]
+		"images":["images/artefact/glas.png"]
       },
       {
         "Имя": "Глаз",
@@ -286,7 +286,7 @@
         "Здоровье": -1,
         "Шанс на порез": 15.0,
         "Тир": 2,
-		"images":["images/artefact/glas.jpg"]
+		"images":["images/artefact/glas.png"]
       },
       {
         "Имя": "Глаз",
@@ -296,7 +296,7 @@
         "Здоровье": -0.7,
         "Шанс на порез": 5.0,
         "Тир": 3,
-		"images":["images/artefact/glas.jpg"]
+		"images":["images/artefact/glas.png"]
       },
       {
         "Имя": "Глаз",
@@ -306,7 +306,7 @@
         "Здоровье": -0.4,
         "Шанс на порез": 2.0,
         "Тир": 4,
-		"images":["images/artefact/glas.jpg"]
+		"images":["images/artefact/glas.png"]
       }
     ]
   },
@@ -321,7 +321,7 @@
         "Шанс перелома": 10.0,
         "Высота прыжка": 2,
         "Тир": 1,
-		"images":["images/artefact/gravi.jpg"]
+		"images":["images/artefact/gravi.png"]
       },
       {
         "Имя": "Грави",
@@ -330,7 +330,7 @@
         "Шанс перелома": 10.0,
         "Высота прыжка": 3,
         "Тир": 2,
-		"images":["images/artefact/gravi.jpg"]
+		"images":["images/artefact/gravi.png"]
       },
       {
         "Имя": "Грави",
@@ -339,7 +339,7 @@
         "Шанс перелома": 10.0,
         "Высота прыжка": 4,
         "Тир": 3,
-		"images":["images/artefact/gravi.jpg"]
+		"images":["images/artefact/gravi.png"]
       },
       {
         "Имя": "Грави",
@@ -350,7 +350,7 @@
         "Шанс перелома": 10.0,
         "Высота прыжка": 6,
         "Тир": 4,
-		"images":["images/artefact/gravi.jpg"]
+		"images":["images/artefact/gravi.png"]
       }
     ]
   },
@@ -365,7 +365,7 @@
         "Здоровье": 2,
         "Еда": -35.0,
         "Тир": 1,
-		"images":["images/artefact/dusha.jpg"]
+		"images":["images/artefact/dusha.png"]
       },
       {
         "Имя": "Душа",
@@ -375,7 +375,7 @@
         "Здоровье": 2.5,
         "Еда": -30.0,
         "Тир": 2,
-		"images":["images/artefact/dusha.jpg"]
+		"images":["images/artefact/dusha.png"]
       },
       {
         "Имя": "Душа",
@@ -385,7 +385,7 @@
         "Здоровье": 3.3,
         "Еда": -30.0,
         "Тир": 3,
-		"images":["images/artefact/dusha.jpg"]
+		"images":["images/artefact/dusha.png"]
       },
       {
         "Имя": "Душа",
@@ -394,7 +394,7 @@
         "Здоровье": 4.2,
         "Еда": -25.0,
         "Тир": 4,
-		"images":["images/artefact/dusha.jpg"]
+		"images":["images/artefact/dusha.png"]
       }
     ]
   },
@@ -413,7 +413,7 @@
         "Еда": 20.0,
         "Высота прыжка": -2,
         "Тир": 1,
-		"images":["images/artefact/goldfish.jpg"]
+		"images":["images/artefact/goldfish.png"]
       },
       {
         "Имя": "Золотая рыбка",
@@ -427,7 +427,7 @@
         "Еда": 30.0,
         "Высота прыжка": -1.8,
         "Тир": 2,
-		"images":["images/artefact/goldfish.jpg"]
+		"images":["images/artefact/goldfish.png"]
       },
       {
         "Имя": "Золотая рыбка",
@@ -441,7 +441,7 @@
         "Еда": 50.0,
         "Высота прыжка": -1.5,
         "Тир": 3,
-		"images":["images/artefact/goldfish.jpg"]
+		"images":["images/artefact/goldfish.png"]
       },
       {
         "Имя": "Золотая рыбка",
@@ -455,7 +455,7 @@
         "Еда": 100.0,
         "Высота прыжка": 0,
         "Тир": 4,
-		"images":["images/artefact/goldfish.jpg"]
+		"images":["images/artefact/goldfish.png"]
       }
     ]
   },
@@ -468,7 +468,7 @@
         "Защита от аномалий": 3,
         "Стойкость": -70.0,
         "Тир": 1,
-		"images":["images/artefact/izolator.jpg"]
+		"images":["images/artefact/izolator.png"]
       },
       {
         "Имя": "Изолятор",
@@ -476,7 +476,7 @@
         "Защита от аномалий": 4,
         "Стойкость": -50.0,
         "Тир": 2,
-		"images":["images/artefact/izolator.jpg"]
+		"images":["images/artefact/izolator.png"]
       },
       {
         "Имя": "Изолятор",
@@ -484,7 +484,7 @@
         "Защита от аномалий": 7,
         "Стойкость": -30.0,
         "Тир": 3,
-		"images":["images/artefact/izolator.jpg"]
+		"images":["images/artefact/izolator.png"]
       },
       {
         "Имя": "Изолятор",
@@ -492,7 +492,7 @@
         "Защита от аномалий": 15,
         "Стойкость": -15.0,
         "Тир": 4,
-		"images":["images/artefact/izolator.jpg"]
+		"images":["images/artefact/izolator.png"]
       }
     ]
   },
@@ -506,7 +506,7 @@
         "Еда": -50.0,
         "Лечение переломов": 35.0,
         "Тир": 1,
-		"images":["images/artefact/stoun.jpg"]
+		"images":["images/artefact/stoun.png"]
       },
       {
         "Имя": "Каменный цветок",
@@ -515,7 +515,7 @@
         "Еда": -40.0,
         "Лечение переломов": 45.0,
         "Тир": 2,
-		"images":["images/artefact/stoun.jpg"]
+		"images":["images/artefact/stoun.png"]
       },
       {
         "Имя": "Каменный цветок",
@@ -524,7 +524,7 @@
         "Еда": -30.0,
         "Лечение переломов": 60.0,
         "Тир": 3,
-		"images":["images/artefact/stoun.jpg"]
+		"images":["images/artefact/stoun.png"]
       },
       {
         "Имя": "Каменный цветок",
@@ -534,7 +534,7 @@
         "Еда": -25.0,
         "Лечение переломов": 100.0,
         "Тир": 4,
-		"images":["images/artefact/stoun.jpg"]
+		"images":["images/artefact/stoun.png"]
       }
     ]
   },
@@ -550,7 +550,7 @@
         "Здоровье": 2,
         "Шанс на порез": 5.0,
         "Тир": 1,
-		"images":["images/artefact/kolobok.jpg"]
+		"images":["images/artefact/kolobok.png"]
       },
       {
         "Имя": "Колобок",
@@ -560,7 +560,7 @@
         "Здоровье": 3,
         "Шанс на порез": 5.0,
         "Тир": 2,
-		"images":["images/artefact/kolobok.jpg"]
+		"images":["images/artefact/kolobok.png"]
       },
       {
         "Имя": "Колобок",
@@ -570,7 +570,7 @@
         "Здоровье": 4,
         "Шанс на порез": 5.0,
         "Тир": 3,
-		"images":["images/artefact/kolobok.jpg"]
+		"images":["images/artefact/kolobok.png"]
       },
       {
         "Имя": "Колобок",
@@ -582,7 +582,7 @@
         "Еда": 30.0,
         "Шанс на порез": 4.0,
         "Тир": 4,
-		"images":["images/artefact/kolobok.jpg"]
+		"images":["images/artefact/kolobok.png"]
       }
     ]
   },
@@ -596,7 +596,7 @@
         "Температура": 60.0,
         "Здоровье": -1,
         "Тир": 1,
-		"images":["images/artefact/mish.jpg"]
+		"images":["images/artefact/mish.png"]
       },
       {
         "Имя": "Компас",
@@ -605,7 +605,7 @@
         "Температура": 50.0,
         "Здоровье": -0.6,
         "Тир": 2,
-		"images":["images/artefact/kompas.jpg"]
+		"images":["images/artefact/kompas.png"]
       },
       {
         "Имя": "Компас",
@@ -614,7 +614,7 @@
         "Температура": 40.0,
         "Здоровье": -0.4,
         "Тир": 3,
-		"images":["images/artefact/kompas.jpg"]
+		"images":["images/artefact/kompas.png"]
       },
       {
         "Имя": "Компас",
@@ -626,7 +626,7 @@
         "Вода": 30.0,
         "Еда": 30.0,
         "Тир": 4,
-		"images":["images/artefact/kompas.jpg"]
+		"images":["images/artefact/kompas.png"]
       }
     ]
   },
@@ -641,7 +641,7 @@
         "Защита от пуль": -2,
         "Температура": 50.0,
         "Тир": 1,
-		"images":["images/artefact/kristall.jpg"]
+		"images":["images/artefact/kristall.png"]
       },
       {
         "Имя": "Кристалл",
@@ -651,7 +651,7 @@
         "Защита от пуль": -2,
         "Температура": 50.0,
         "Тир": 2,
-		"images":["images/artefact/kristall.jpg"]
+		"images":["images/artefact/kristall.png"]
       },
       {
         "Имя": "Кристалл",
@@ -661,7 +661,7 @@
         "Защита от пуль": -1,
         "Температура": 50.0,
         "Тир": 3,
-		"images":["images/artefact/kristall.jpg"]
+		"images":["images/artefact/kristall.png"]
       },
       {
         "Имя": "Кристалл",
@@ -671,7 +671,7 @@
         "Защита от пуль": -1,
         "Температура": 40.0,
         "Тир": 4,
-		"images":["images/artefact/kristall.jpg"]
+		"images":["images/artefact/kristall.png"]
       }
     ]
   },
@@ -685,7 +685,7 @@
         "Кровь": 120,
         "Вода": -20.0,
         "Тир": 1,
-		"images":["images/artefact/blood.jpg"]
+		"images":["images/artefact/blood.png"]
       },
       {
         "Имя": "Кровь камня",
@@ -694,7 +694,7 @@
         "Кровь": 150,
         "Вода": -25.0,
         "Тир": 2,
-		"images":["images/artefact/blood.jpg"]
+		"images":["images/artefact/blood.png"]
       },
       {
         "Имя": "Кровь камня",
@@ -703,7 +703,7 @@
         "Кровь": 170,
         "Вода": -25.0,
         "Тир": 3,
-		"images":["images/artefact/blood.jpg"]
+		"images":["images/artefact/blood.png"]
       },
       {
         "Имя": "Кровь камня",
@@ -712,7 +712,7 @@
         "Кровь": 250,
         "Вода": -40.0,
         "Тир": 4,
-		"images":["images/artefact/blood.jpg"]
+		"images":["images/artefact/blood.png"]
       }
     ]
   },
@@ -727,7 +727,7 @@
         "Лечение порезов": 20.0,
         "Высота прыжка": 2,
         "Тир": 1,
-		"images":["images/artefact/mish.jpg"]
+		"images":["images/artefact/mish.png"]
       },
       {
         "Имя": "Летучая мышь",
@@ -736,7 +736,7 @@
         "Лечение порезов": 30.0,
         "Высота прыжка": 2.5,
         "Тир": 2,
-		"images":["images/artefact/mish.jpg"]
+		"images":["images/artefact/mish.png"]
       },
       {
         "Имя": "Летучая мышь",
@@ -745,7 +745,7 @@
         "Лечение порезов": 45.0,
         "Высота прыжка": 3,
         "Тир": 3,
-		"images":["images/artefact/mish.jpg"]
+		"images":["images/artefact/mish.png"]
       },
       {
         "Имя": "Летучая мышь",
@@ -754,7 +754,7 @@
         "Лечение порезов": 80.0,
         "Высота прыжка": 5,
         "Тир": 4,
-		"images":["images/artefact/mish.jpg"]
+		"images":["images/artefact/mish.png"]
       }
     ]
   },
@@ -768,7 +768,7 @@
         "Здоровье": 2,
         "Еда": -20.0,
         "Тир": 1,
-		"images":["images/artefact/lomot.jpg"]
+		"images":["images/artefact/lomot.png"]
       },
       {
         "Имя": "Ломоть мяса",
@@ -777,7 +777,7 @@
         "Здоровье": 3,
         "Еда": -30.0,
         "Тир": 2,
-		"images":["images/artefact/lomot.jpg"]
+		"images":["images/artefact/lomot.png"]
       },
       {
         "Имя": "Ломоть мяса",
@@ -786,7 +786,7 @@
         "Здоровье": 4,
         "Еда": -40.0,
         "Тир": 3,
-		"images":["images/artefact/lomot.jpg"]
+		"images":["images/artefact/lomot.png"]
       },
       {
         "Имя": "Ломоть мяса",
@@ -796,7 +796,7 @@
         "Вода": -50.0,
         "Еда": 50.0,
         "Тир": 4,
-		"images":["images/artefact/lomot.jpg"]
+		"images":["images/artefact/lomot.png"]
       }
     ]
   },
@@ -811,7 +811,7 @@
         "Вода": -200.0,
         "Лечение порезов": 2.0,
         "Тир": 1,
-		"images":["images/artefact/svet.jpg"]
+		"images":["images/artefact/svet.png"]
       },
       {
         "Имя": "Лунный свет",
@@ -821,7 +821,7 @@
         "Вода": -160.0,
         "Лечение порезов": 40.0,
         "Тир": 2,
-		"images":["images/artefact/svet.jpg"]
+		"images":["images/artefact/svet.png"]
       },
       {
         "Имя": "Лунный свет",
@@ -831,7 +831,7 @@
         "Вода": -140.0,
         "Лечение порезов": 50.0,
         "Тир": 3,
-		"images":["images/artefact/svet.jpg"]
+		"images":["images/artefact/svet.png"]
       },
       {
         "Имя": "Лунный свет",
@@ -841,7 +841,7 @@
         "Вода": -70.0,
         "Лечение порезов": 80.0,
         "Тир": 4,
-		"images":["images/artefact/svet.jpg"]
+		"images":["images/artefact/svet.png"]
       }
     ]
   },
@@ -855,7 +855,7 @@
         "Выносливость": -10.0,
         "Вода": -16.0,
         "Тир": 1,
-		"images":["images/artefact/busa.jpg"]
+		"images":["images/artefact/busa.png"]
       },
       {
         "Имя": "Мамины бусы",
@@ -864,7 +864,7 @@
         "Выносливость": -15.0,
         "Вода": -10.0,
         "Тир": 2,
-		"images":["images/artefact/busa.jpg"]
+		"images":["images/artefact/busa.png"]
       },
       {
         "Имя": "Мамины бусы",
@@ -873,7 +873,7 @@
         "Выносливость": -15.0,
         "Вода": -10.0,
         "Тир": 3,
-		"images":["images/artefact/busa.jpg"]
+		"images":["images/artefact/busa.png"]
       },
       {
         "Имя": "Мамины бусы",
@@ -882,7 +882,7 @@
         "Выносливость": -10.0,
         "Вода": -35.0,
         "Тир": 4,
-		"images":["images/artefact/busa.jpg"]
+		"images":["images/artefact/busa.png"]
       }
     ]
   },
@@ -896,7 +896,7 @@
         "Здоровье": -2.3,
         "Еда": 30.0,
         "Тир": 1,
-		"images":["images/artefact/maiak.jpg"]
+		"images":["images/artefact/maiak.png"]
       },
       {
         "Имя": "Маяк",
@@ -905,7 +905,7 @@
         "Здоровье": -2,
         "Еда": 50.0,
         "Тир": 2,
-		"images":["images/artefact/maiak.jpg"]
+		"images":["images/artefact/maiak.png"]
       },
       {
         "Имя": "Маяк",
@@ -914,7 +914,7 @@
         "Здоровье": -1,
         "Еда": 80.0,
         "Тир": 3,
-		"images":["images/artefact/maiak.jpg"]
+		"images":["images/artefact/maiak.png"]
       },
       {
         "Имя": "Маяк",
@@ -924,7 +924,7 @@
         "Вода": -40.0,
         "Еда": 160.0,
         "Тир": 4,
-		"images":["images/artefact/maiak.jpg"]
+		"images":["images/artefact/maiak.png"]
       }
     ]
   },
@@ -939,7 +939,7 @@
         "Еда": -40.0,
         "Высота прыжка": -1,
         "Тир": 1,
-		"images":["images/artefact/medalion.jpg"]
+		"images":["images/artefact/medalion.png"]
       },
       {
         "Имя": "Медальон",
@@ -949,7 +949,7 @@
         "Еда": -40.0,
         "Высота прыжка": -1,
         "Тир": 2,
-		"images":["images/artefact/medalion.jpg"]
+		"images":["images/artefact/medalion.png"]
       },
       {
         "Имя": "Медальон",
@@ -959,7 +959,7 @@
         "Еда": -50.0,
         "Высота прыжка": -1,
         "Тир": 3,
-		"images":["images/artefact/medalion.jpg"]
+		"images":["images/artefact/medalion.png"]
       },
       {
         "Имя": "Медальон",
@@ -969,7 +969,7 @@
         "Еда": -30.0,
         "Лечение порезов": 20.0,
         "Тир": 4,
-		"images":["images/artefact/medalion.jpg"]
+		"images":["images/artefact/medalion.png"]
       }
     ]
   },
@@ -982,7 +982,7 @@
         "Выносливость": -10.0,
         "Шанс на порез": 10.0,
         "Тир": 1,
-		"images":["images/artefact/medusa.jpg"]
+		"images":["images/artefact/medusa.png"]
       },
       {
         "Имя": "Медуза",
@@ -990,7 +990,7 @@
         "Выносливость": -7.0,
         "Шанс на порез": 10.0,
         "Тир": 2,
-		"images":["images/artefact/medusa.jpg"]
+		"images":["images/artefact/medusa.png"]
       },
       {
         "Имя": "Медуза",
@@ -998,7 +998,7 @@
         "Выносливость": -5.0,
         "Шанс на порез": 10.0,
         "Тир": 3,
-		"images":["images/artefact/medusa.jpg"]
+		"images":["images/artefact/medusa.png"]
       },
       {
         "Имя": "Медуза",
@@ -1009,7 +1009,7 @@
         "Еда": -25.0,
         "Шанс на порез": 5.0,
         "Тир": 4,
-		"images":["images/artefact/medusa.jpg"]
+		"images":["images/artefact/medusa.png"]
       }
     ]
   },
@@ -1024,7 +1024,7 @@
         "Здоровье": 3,
         "Шанс на порез": 10.0,
         "Тир": 1,
-		"images":["images/artefact/zvezda.jpg"]
+		"images":["images/artefact/zvezda.png"]
       },
       {
         "Имя": "Ночная звезда",
@@ -1034,7 +1034,7 @@
         "Здоровье": 4,
         "Шанс на порез": 10.0,
         "Тир": 2,
-		"images":["images/artefact/zvezda.jpg"]
+		"images":["images/artefact/zvezda.png"]
       },
       {
         "Имя": "Ночная звезда",
@@ -1044,7 +1044,7 @@
         "Здоровье": 5,
         "Шанс на порез": 10.0,
         "Тир": 3,
-		"images":["images/artefact/zvezda.jpg"]
+		"images":["images/artefact/zvezda.png"]
       },
       {
         "Имя": "Ночная звезда",
@@ -1055,7 +1055,7 @@
         "Здоровье": 8,
         "Шанс на порез": 5.0,
         "Тир": 4,
-		"images":["images/artefact/zvezda.jpg"]
+		"images":["images/artefact/zvezda.png"]
       }
     ]
   },
@@ -1072,7 +1072,7 @@
         "Вода": 50.0,
         "Еда": 50.0,
         "Тир": 1,
-		"images":["images/artefact/oazis.jpg"]
+		"images":["images/artefact/oazis.png"]
       },
       {
         "Имя": "Оазис",
@@ -1084,7 +1084,7 @@
         "Вода": 60.0,
         "Еда": 60.0,
         "Тир": 2,
-		"images":["images/artefact/oazis.jpg"]
+		"images":["images/artefact/oazis.png"]
       },
       {
         "Имя": "Оазис",
@@ -1096,7 +1096,7 @@
         "Вода": 80.0,
         "Еда": 80.0,
         "Тир": 3,
-		"images":["images/artefact/oazis.jpg"]
+		"images":["images/artefact/oazis.png"]
       },
       {
         "Имя": "Оазис",
@@ -1108,7 +1108,7 @@
         "Вода": 120.0,
         "Еда": 120.0,
         "Тир": 4,
-		"images":["images/artefact/oazis.jpg"]
+		"images":["images/artefact/oazis.png"]
       }
     ]
   },
@@ -1124,7 +1124,7 @@
         "Вода": -30.0,
         "Еда": -30.0,
         "Тир": 1,
-		"images":["images/artefact/persten.jpg"]
+		"images":["images/artefact/persten.png"]
       },
       {
         "Имя": "Перстень",
@@ -1135,7 +1135,7 @@
         "Вода": -40.0,
         "Еда": -40.0,
         "Тир": 2,
-		"images":["images/artefact/persten.jpg"]
+		"images":["images/artefact/persten.png"]
       },
       {
         "Имя": "Перстень",
@@ -1146,7 +1146,7 @@
         "Вода": -50.0,
         "Еда": -50.0,
         "Тир": 3,
-		"images":["images/artefact/persten.jpg"]
+		"images":["images/artefact/persten.png"]
       },
       {
         "Имя": "Перстень",
@@ -1157,7 +1157,7 @@
         "Вода": -60.0,
         "Еда": -60.0,
         "Тир": 4,
-		"images":["images/artefact/persten.jpg"]
+		"images":["images/artefact/persten.png"]
       }
     ]
   },
@@ -1173,7 +1173,7 @@
         "Здоровье": 2,
         "Шанс перелома": 20.0,
         "Тир": 1,
-		"images":["images/artefact/fire.jpg"]
+		"images":["images/artefact/fire.png"]
       },
       {
         "Имя": "Пламя",
@@ -1184,7 +1184,7 @@
         "Здоровье": 3,
         "Шанс перелома": 15.0,
         "Тир": 2,
-		"images":["images/artefact/fire.jpg"]
+		"images":["images/artefact/fire.png"]
       },
       {
         "Имя": "Пламя",
@@ -1195,7 +1195,7 @@
         "Здоровье": 4,
         "Шанс перелома": 5.0,
         "Тир": 3,
-		"images":["images/artefact/fire.jpg"]
+		"images":["images/artefact/fire.png"]
       },
       {
         "Имя": "Пламя",
@@ -1206,7 +1206,7 @@
         "Здоровье": 6,
         "Шанс перелома": 5.0,
         "Тир": 4,
-		"images":["images/artefact/fire.jpg"]
+		"images":["images/artefact/fire.png"]
       }
     ]
   },
@@ -1219,7 +1219,7 @@
         "Вода": -100.0,
         "Еда": -100.0,
         "Тир": 1,
-		"images":["images/artefact/snejinka.jpg"]
+		"images":["images/artefact/snejinka.png"]
       },
       {
         "Имя": "Пузырь",
@@ -1227,7 +1227,7 @@
         "Вода": -80.0,
         "Еда": -80.0,
         "Тир": 2,
-		"images":["images/artefact/snejinka.jpg"]
+		"images":["images/artefact/snejinka.png"]
       },
       {
         "Имя": "Пузырь",
@@ -1235,7 +1235,7 @@
         "Вода": -50.0,
         "Еда": -50.0,
         "Тир": 3,
-		"images":["images/artefact/snejinka.jpg"]
+		"images":["images/artefact/snejinka.png"]
       },
       {
         "Имя": "Пузырь",
@@ -1244,7 +1244,7 @@
         "Вода": -60.0,
         "Еда": -60.0,
         "Тир": 4,
-		"images":["images/artefact/snejinka.jpg"]
+		"images":["images/artefact/snejinka.png"]
       }
     ]
   },
@@ -1254,22 +1254,22 @@
       {
         "Имя": "Пустышка",
         "Тир": 1,
-		"images":["images/artefact/pusto.jpg"]
+		"images":["images/artefact/pusto.png"]
       },
       {
         "Имя": "Пустышка",
         "Тир": 2,
-		"images":["images/artefact/pusto.jpg"]
+		"images":["images/artefact/pusto.png"]
       },
       {
         "Имя": "Пустышка",
         "Тир": 3,
-		"images":["images/artefact/pusto.jpg"]
+		"images":["images/artefact/pusto.png"]
       },
       {
         "Имя": "Пустышка",
         "Тир": 4,
-		"images":["images/artefact/pusto.jpg"]
+		"images":["images/artefact/pusto.png"]
       }
     ]
   },
@@ -1283,7 +1283,7 @@
         "Еда": -40.0,
         "Шанс на порез": 20.0,
         "Тир": 1,
-		"images":["images/artefact/serafim.jpg"]
+		"images":["images/artefact/serafim.png"]
       },
       {
         "Имя": "Серафим",
@@ -1292,7 +1292,7 @@
         "Еда": -40.0,
         "Шанс на порез": 15.0,
         "Тир": 2,
-		"images":["images/artefact/serafim.jpg"]
+		"images":["images/artefact/serafim.png"]
       },
       {
         "Имя": "Серафим",
@@ -1301,7 +1301,7 @@
         "Еда": -45.0,
         "Шанс на порез": 10.0,
         "Тир": 3,
-		"images":["images/artefact/serafim.jpg"]
+		"images":["images/artefact/serafim.png"]
       },
       {
         "Имя": "Серафим",
@@ -1312,7 +1312,7 @@
         "Еда": -25.0,
         "Шанс на порез": 5.0,
         "Тир": 4,
-		"images":["images/artefact/serafim.jpg"]
+		"images":["images/artefact/serafim.png"]
       }
     ]
   },
@@ -1329,7 +1329,7 @@
         "Вода": 50.0,
         "Еда": 50.0,
         "Тир": 1,
-		"images":["images/artefact/snejinka.jpg"]
+		"images":["images/artefact/snejinka.png"]
       },
       {
         "Имя": "Снежинка",
@@ -1341,7 +1341,7 @@
         "Вода": 65.0,
         "Еда": 65.0,
         "Тир": 2,
-		"images":["images/artefact/snejinka.jpg"]
+		"images":["images/artefact/snejinka.png"]
       },
       {
         "Имя": "Снежинка",
@@ -1353,7 +1353,7 @@
         "Вода": 80.0,
         "Еда": 80.0,
         "Тир": 3,
-		"images":["images/artefact/snejinka.jpg"]
+		"images":["images/artefact/snejinka.png"]
       },
       {
         "Имя": "Снежинка",
@@ -1365,7 +1365,7 @@
         "Вода": 150.0,
         "Еда": 150.0,
         "Тир": 4,
-		"images":["images/artefact/snejinka.jpg"]
+		"images":["images/artefact/snejinka.png"]
       }
     ]
   },
@@ -1379,7 +1379,7 @@
         "Здоровье": -1,
         "Высота прыжка": 2,
         "Тир": 1,
-		"images":["images/artefact/fantom.jpg"]
+		"images":["images/artefact/fantom.png"]
       },
       {
         "Имя": "Фантом",
@@ -1388,7 +1388,7 @@
         "Здоровье": -0.5,
         "Высота прыжка": 2.5,
         "Тир": 2,
-		"images":["images/artefact/fantom.jpg"]
+		"images":["images/artefact/fantom.png"]
       },
       {
         "Имя": "Фантом",
@@ -1397,7 +1397,7 @@
         "Здоровье": -0.3,
         "Высота прыжка": 3,
         "Тир": 3,
-		"images":["images/artefact/fantom.jpg"]
+		"images":["images/artefact/fantom.png"]
       },
       {
         "Имя": "Фантом",
@@ -1407,7 +1407,7 @@
         "Здоровье": -0.1,
         "Высота прыжка": 5,
         "Тир": 4,
-		"images":["images/artefact/fantom.jpg"]
+		"images":["images/artefact/fantom.png"]
       }
     ]
   },
@@ -1422,7 +1422,7 @@
         "Кровь": -10,
         "Вода": 80.0,
         "Тир": 1,
-		"images":["images/artefact/fontan.jpg"]
+		"images":["images/artefact/fontan.png"]
       },
       {
         "Имя": "Фонтан",
@@ -1432,7 +1432,7 @@
         "Кровь": -7.5,
         "Вода": 100.0,
         "Тир": 2,
-		"images":["images/artefact/fontan.jpg"]
+		"images":["images/artefact/fontan.png"]
       },
       {
         "Имя": "Фонтан",
@@ -1442,7 +1442,7 @@
         "Кровь": -5,
         "Вода": 140.0,
         "Тир": 3,
-		"images":["images/artefact/fontan.jpg"]
+		"images":["images/artefact/fontan.png"]
       },
       {
         "Имя": "Фонтан",
@@ -1453,7 +1453,7 @@
         "Кровь": -10,
         "Вода": 200.0,
         "Тир": 4,
-		"images":["images/artefact/fontan.jpg"]
+		"images":["images/artefact/fontan.png"]
       }
     ]
   },
@@ -1468,7 +1468,7 @@
         "Здоровье": 2.5,
         "Шанс перелома": 80.0,
         "Тир": 1,
-		"images":["images/artefact/celust.jpg"]
+		"images":["images/artefact/celust.png"]
       },
       {
         "Имя": "Челюсть",
@@ -1478,7 +1478,7 @@
         "Здоровье": 3,
         "Шанс перелома": 60.0,
         "Тир": 2,
-		"images":["images/artefact/celust.jpg"]
+		"images":["images/artefact/celust.png"]
       },
       {
         "Имя": "Челюсть",
@@ -1488,7 +1488,7 @@
         "Здоровье": 4,
         "Шанс перелома": 45.0,
         "Тир": 3,
-		"images":["images/artefact/celust.jpg"]
+		"images":["images/artefact/celust.png"]
       },
       {
         "Имя": "Челюсть",
@@ -1500,7 +1500,7 @@
         "Еда": -50.0,
         "Шанс перелома": 30.0,
         "Тир": 4,
-		"images":["images/artefact/celust.jpg"]
+		"images":["images/artefact/celust.png"]
       }
     ]
   },
@@ -1516,7 +1516,7 @@
         "Шанс на порез": 10.0,
         "Лечение переломов": 30.0,
         "Тир": 1,
-		"images":["images/artefact/scraga.jpg"]
+		"images":["images/artefact/scraga.png"]
       },
       {
         "Имя": "Череп скряги",
@@ -1527,7 +1527,7 @@
         "Шанс на порез": 5.0,
         "Лечение переломов": 40.0,
         "Тир": 2,
-		"images":["images/artefact/scraga.jpg"]
+		"images":["images/artefact/scraga.png"]
       },
       {
         "Имя": "Череп скряги",
@@ -1538,7 +1538,7 @@
         "Шанс на порез": 3.0,
         "Лечение переломов": 50.0,
         "Тир": 3,
-		"images":["images/artefact/scraga.jpg"]
+		"images":["images/artefact/scraga.png"]
       },
       {
         "Имя": "Череп скряги",
@@ -1550,7 +1550,7 @@
         "Лечение порезов": 10.0,
         "Лечение переломов": 90.0,
         "Тир": 4,
-		"images":["images/artefact/scraga.jpg"]
+		"images":["images/artefact/scraga.png"]
       }
     ]
   },
@@ -1565,7 +1565,7 @@
         "Здоровье": -2.5,
         "Лечение переломов": 20.0,
         "Тир": 1,
-		"images":["images/artefact/firerball.jpg"]
+		"images":["images/artefact/firerball.png"]
       },
       {
         "Имя": "Шар",
@@ -1575,7 +1575,7 @@
         "Здоровье": -1.5,
         "Лечение переломов": 40.0,
         "Тир": 2,
-		"images":["images/artefact/firerball.jpg"]
+		"images":["images/artefact/firerball.png"]
       },
       {
         "Имя": "Шар",
@@ -1585,7 +1585,7 @@
         "Здоровье": -1,
         "Лечение переломов": 50.0,
         "Тир": 3,
-		"images":["images/artefact/firerball.jpg"]
+		"images":["images/artefact/firerball.png"]
       },
       {
         "Имя": "Шар",
@@ -1596,7 +1596,7 @@
         "Здоровье": -0.5,
         "Лечение переломов": 80.0,
         "Тир": 4,
-		"images":["images/artefact/firerball.jpg"]
+		"images":["images/artefact/firerball.png"]
       }
     ]
   },
@@ -1610,7 +1610,7 @@
         "Стойкость": -40.0,
         "Шанс на порез": 10.0,
         "Тир": 1,
-		"images":["images/artefact/shturval.jpg"]
+		"images":["images/artefact/shturval.png"]
       },
       {
         "Имя": "Штурвал",
@@ -1619,7 +1619,7 @@
         "Стойкость": -35.0,
         "Шанс на порез": 15.0,
         "Тир": 2,
-		"images":["images/artefact/shturval.jpg"]
+		"images":["images/artefact/shturval.png"]
       },
       {
         "Имя": "Штурвал",
@@ -1628,7 +1628,7 @@
         "Стойкость": -27.0,
         "Шанс на порез": 10.0,
         "Тир": 3,
-		"images":["images/artefact/shturval.jpg"]
+		"images":["images/artefact/shturval.png"]
       },
       {
         "Имя": "Штурвал",
@@ -1637,7 +1637,7 @@
         "Стойкость": -13.0,
         "Шанс на порез": 3.0,
         "Тир": 4,
-		"images":["images/artefact/shturval.jpg"]
+		"images":["images/artefact/shturval.png"]
       }
     ]
   }
