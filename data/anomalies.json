@@ -1,62 +1,62 @@
 [
     {
         "name": "Аномалия Электро",
-        "video": "images/anomaly_webm/electro.webm",
+        "video": "images/anomaly/electro.mp4",
         "description": "Описание Электро аномалии."
     },
     {
         "name": "Аномалия Разряд",
-        "video": "images/anomaly_webm/electro_2.webm",
+        "video": "images/anomaly/electro_2.mp4",
         "description": "Описание аномалии Разряд."
     },
     {
         "name": "Аномалия Мороз",
-        "video": "images/anomaly_webm/frost.webm",
+        "video": "images/anomaly/frost.mp4",
         "description": "Описание аномалии Мороз."
     },
     {
         "name": "Аномалия Хлопушка",
-        "video": "images/anomaly_webm/hlopyska.webm",
+        "video": "images/anomaly/hlopyska.mp4",
         "description": "Описание аномалии Хлопушка."
     },
     {
         "name": "Аномалия Синий Кисель",
-        "video": "images/anomaly_webm/kisel_blue.webm",
+        "video": "images/anomaly/kisel_blue.mp4",
         "description": "Описание аномалии Синий Кисель."
     },
     {
         "name": "Аномалия Красный Кисель",
-        "video": "images/anomaly_webm/kisel_red.webm",
+        "video": "images/anomaly/kisel_red.mp4",
         "description": "Описание аномалии Красный Кисель."
     },
     {
         "name": "Аномалия Желтый Кисель",
-        "video": "images/anomaly_webm/kisel_yellou.webm",
+        "video": "images/anomaly/kisel_yellou.mp4",
         "description": "Описание аномалии Желтый Кисель."
     },
     {
         "name": "Аномалия Мухоловка",
-        "video": "images/anomaly_webm/myxolovka.webm",
+        "video": "images/anomaly/myxolovka.mp4",
         "description": "Описание аномалии Мухоловка."
     },
     {
         "name": "Аномалия Пар",
-        "video": "images/anomaly_webm/steam.webm",
+        "video": "images/anomaly/steam.mp4",
         "description": "Описание аномалии Пар."
     },
     {
         "name": "Аномалия Телепорт",
-        "video": "images/anomaly_webm/teleport.webm",
+        "video": "images/anomaly/teleport.mp4",
         "description": "Описание аномалии Телепорт."
     },
     {
         "name": "Аномалия Трамплин",
-        "video": "images/anomaly_webm/tramplin.webm",
+        "video": "images/anomaly/tramplin.mp4",
         "description": "Описание аномалии Трамплин."
     },
     {
         "name": "Аномалия Жарка",
-        "video": "images/anomaly_webm/zharka.webm",
+        "video": "images/anomaly/zharka.mp4",
         "description": "Описание аномалии Жарка."
     }
 ]
