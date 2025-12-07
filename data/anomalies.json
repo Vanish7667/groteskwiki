@@ -1,62 +1,62 @@
 [
     {
-        "name": "Аномалия 1",
-        "image": "images/anomaly_webm/",
-        "description": "Описание аномалии 1. Опасность, особенности, влияние на игрока."
+        "name": "Аномалия Электро",
+        "video": "images/anomaly_webm/electro.webm",
+        "description": "Описание Электро аномалии."
     },
     {
-        "name": "Аномалия 2",
-        "image": "images/anomaly_webm/",
-        "description": "Описание аномалии 2. Опасность, особенности, влияние на игрока."
+        "name": "Аномалия Разряд",
+        "video": "images/anomaly_webm/electro_2.webm",
+        "description": "Описание аномалии Разряд."
     },
     {
-        "name": "Аномалия 3",
-        "video": "images/anomaly_webm/",
-        "description": "Описание аномалии 3. Опасность, особенности, влияние на игрока."
+        "name": "Аномалия Мороз",
+        "video": "images/anomaly_webm/frost.webm",
+        "description": "Описание аномалии Мороз."
     },
     {
-        "name": "Аномалия 4",
-        "video": "images/anomaly_webm/",
-        "description": "Описание аномалии 4. Опасность, особенности, влияние на игрока."
+        "name": "Аномалия Хлопушка",
+        "video": "images/anomaly_webm/hlopyska.webm",
+        "description": "Описание аномалии Хлопушка."
     },
     {
-        "name": "Аномалия 5",
-        "video": "images/anomaly_webm/",
-        "description": "Описание аномалии 5. Опасность, особенности, влияние на игрока."
+        "name": "Аномалия Синий Кисель",
+        "video": "images/anomaly_webm/kisel_blue.webm",
+        "description": "Описание аномалии Синий Кисель."
     },
     {
-        "name": "Аномалия 6",
-        "video": "images/anomaly_webm/",
-        "description": "Описание аномалии 6. Опасность, особенности, влияние на игрока."
+        "name": "Аномалия Красный Кисель",
+        "video": "images/anomaly_webm/kisel_red.webm",
+        "description": "Описание аномалии Красный Кисель."
     },
     {
-        "name": "Аномалия 7",
-        "video": "images/anomaly_webm/",
-        "description": "Описание аномалии 7. Опасность, особенности, влияние на игрока."
+        "name": "Аномалия Желтый Кисель",
+        "video": "images/anomaly_webm/kisel_yellou.webm",
+        "description": "Описание аномалии Желтый Кисель."
     },
     {
-        "name": "Аномалия 8",
-        "video": "images/anomaly_webm/",
-        "description": "Описание аномалии 8. Опасность, особенности, влияние на игрока."
+        "name": "Аномалия Мухоловка",
+        "video": "images/anomaly_webm/myxolovka.webm",
+        "description": "Описание аномалии Мухоловка."
     },
     {
-        "name": "Аномалия 9",
-        "video": "images/anomaly_webm/",
-        "description": "Описание аномалии 9. Опасность, особенности, влияние на игрока."
+        "name": "Аномалия Пар",
+        "video": "images/anomaly_webm/steam.webm",
+        "description": "Описание аномалии Пар."
     },
     {
-        "name": "Аномалия 10",
-        "video": "images/anomaly_webm/",
-        "description": "Описание аномалии 10. Опасность, особенности, влияние на игрока."
+        "name": "Аномалия Телепорт",
+        "video": "images/anomaly_webm/teleport.webm",
+        "description": "Описание аномалии Телепорт."
     },
     {
-        "name": "Аномалия 11",
-        "video": "images/anomaly_webm/",
-        "description": "Описание аномалии 11. Опасность, особенности, влияние на игрока."
+        "name": "Аномалия Трамплин",
+        "video": "images/anomaly_webm/tramplin.webm",
+        "description": "Описание аномалии Трамплин."
     },
     {
-        "name": "Аномалия 12",
-        "video": "images/anomaly_webm/",
-        "description": "Описание аномалии 12. Опасность, особенности, влияние на игрока."
+        "name": "Аномалия Жарка",
+        "video": "images/anomaly_webm/zharka.webm",
+        "description": "Описание аномалии Жарка."
     }
 ]
