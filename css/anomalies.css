@@ -1,0 +1,71 @@
+.anomalies-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 20px;
+}
+
+/* Список аномалий слева */
+.anomaly-list {
+    flex: 0 0 250px;
+    background-color: #2b2b2b;
+    border-left: 6px solid #ffb000;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.anomaly-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.anomaly-list li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #222222;
+    color: #e7a03d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.anomaly-list li:hover,
+.anomaly-list li.active {
+    background: #ffb000;
+    color: #111111;
+}
+
+/* Детальная карточка */
+.anomaly-detail {
+    flex: 1;
+    background: #2b2b2b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+.anomaly-detail h2 {
+    color: #ffb000;
+    margin-bottom: 15px;
+}
+
+.anomaly-detail img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(255,176,0,0.5);
+}
+
+.anomaly-detail p {
+    color: #ccc;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+#anomaly-image,
+#anomaly-video {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}

@@ -9,6 +9,7 @@
 
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/gear.css">
+<link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
 
@@ -18,15 +19,38 @@
 
 <nav>
     <ul class="tabs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="rules.html">Правила</a></li>
-        <li><a href="weapon.html">Оружие</a></li>
-        <li><a href="gear.html" class="active">Снаряжение</a></li>
-        <li><a href="map.html">Карта</a></li>
-        <li><a href="anomalies.html">Аномалии и детекторы</a></li>
-        <li><a href="artifact_calc.html">Калькулятор артефактов</a></li>
-        <li><a href="workbench.html">Верстак</a></li>
-        <li><a href="damage_table.html">Таблица урона</a></li>
+        <!-- Главная вкладка без выпадающего списка -->
+        <li>
+            <a href="index.html">Главная</a>
+        </li>
+
+        <!-- Раздел Информация -->
+        <li class="dropdown">
+            <a href="#">Информация</a>
+            <ul class="dropdown-content">
+                <li><a href="rules.html">Правила</a></li>
+                <li><a href="calibers.html">Калибры</a></li>
+                <li><a href="rank.html">Ранг</a></li>
+                <li><a href="anomalies.html">Аномалии</a></li>
+            </ul>
+        </li>
+
+        <!-- Раздел Инструменты -->
+        <li class="dropdown">
+            <a href="#">Инструменты</a>
+            <ul class="dropdown-content">
+                <li><a href="artifact_calc.html">Калькулятор артефактов</a></li>
+                <li><a href="map.html">Карта</a></li>
+            </ul>
+        </li>
+
+        <!-- Раздел Предметы -->
+        <li class="dropdown">
+            <a href="#">Предметы</a>
+            <ul class="dropdown-content">
+                <li><a href="gear.html">Снаряжение</a></li>
+            </ul>
+        </li>
     </ul>
 </nav>
 
@@ -70,5 +94,6 @@
 </footer>
 
 <script src="js/gear.js"></script>
+<script src="js/nav.js"></script>
 </body>
 </html>

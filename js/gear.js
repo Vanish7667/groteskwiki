@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const jsonFiles = {
     "Скрытная": "data/gear/Secretive.json",
     "Научная": "data/gear/Scientific.json",
-    "Боевая": "data/gear/Combat.json"
+    "Боевая": "data/gear/Combat.json",
+    "Новые сеты ( не готово )": "data/gear/new_sets_test.json"
   };
 
   const categoriesEl = document.getElementById("categories-list");

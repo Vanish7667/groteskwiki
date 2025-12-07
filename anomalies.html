@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аномалии — GroteskStalker PvE</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/anomalies.css">
+    <script src="js/nav.js" defer></script>
+    <script src="js/anomalies.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Аномалии</h1>
+    </header>
+
+    <!-- Навигация -->
+    <nav>
+        <ul class="tabs">
+            <li><a href="index.html">Главная</a></li>
+            <li class="dropdown">
+                <a href="#">Информация</a>
+                <ul class="dropdown-content">
+                    <li><a href="rules.html">Правила</a></li>
+                    <li><a href="calibers.html">Калибры</a></li>
+                    <li><a href="rank.html">Ранг</a></li>
+                    <li><a href="anomalies.html">Аномалии</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Инструменты</a>
+                <ul class="dropdown-content">
+                    <li><a href="artifact_calc.html">Калькулятор артефактов</a></li>
+                    <li><a href="map.html">Карта</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Предметы</a>
+                <ul class="dropdown-content">
+                    <li><a href="gear.html">Снаряжение</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container anomalies-container">
+        <!-- Список аномалий -->
+        <aside class="anomaly-list">
+            <ul id="anomalies-list">
+                <!-- Заполняется JS -->
+            </ul>
+        </aside>
+
+        <!-- Карточка с описанием -->
+        <main class="anomaly-detail" id="anomaly-detail">
+    <h2>Выберите аномалию</h2>
+
+    <img id="anomaly-image" style="display:none;">
+
+    <video id="anomaly-video" autoplay loop muted playsinline style="display:none; width:400px; height:225px; object-fit:cover;">
+        <source id="anomaly-video-source" src="" type="video/webm">
+    </video>
+
+    <p id="anomaly-description"></p>
+</main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+.rank-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.rank-card {
+    background: #2b2b2b;
+    border-left: 6px solid var(--clr);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+    transition: .25s;
+}
+
+.rank-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px var(--clr);
+}
+
+.rank-card h2 {
+    color: var(--clr);
+    margin-bottom: 10px;
+}
+
+.rank-card p {
+    color: #ccc;
+    font-size: 15px;
+}
+
+.rank-card .role {
+    color: var(--clr);
+    font-weight: bold;
+}

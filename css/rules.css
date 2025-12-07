@@ -1,0 +1,82 @@
+.rules-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.rules-list {
+    list-style: none;
+    padding: 0;
+}
+
+.rules-list li {
+    background-color: #1c1c1c;
+    color: #e7a03d; /* обычные правила */
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #e7a03d;
+    line-height: 1.4;
+    position: relative;
+}
+
+/* популярные правила красноватые */
+.rules-list li.popular {
+    background-color: #4d1c1c;
+    color: #ffb3b3;
+    border-color: #ff6b6b;
+}
+
+/* тултип */
+.rules-list li .tooltip {
+    visibility: hidden;
+    width: 220px;
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    padding: 5px 10px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 105%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 13px;
+}
+
+.rules-list li.popular:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* кружок с восклицательным знаком */
+.rules-list li.popular::before {
+    content: "!";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #e7a03d;
+    color: #555;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.rules-list li a.rule-link,
+footer a.rule-link {
+    color: #e7a03d; /* основной цвет текста */
+    text-decoration: underline;
+}
+
+.rules-list li a.rule-link:hover,
+footer a.rule-link:hover {
+    color: #ffb000; /* подсветка при наведении */
+}
