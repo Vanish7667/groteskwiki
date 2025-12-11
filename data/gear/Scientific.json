@@ -915,5 +915,642 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "ИПК 99/99М",
+        "variants": [
+            {
+                "rank": "Легенда Х",
+                "description": "Описание ИПК 99/99М.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Жилет ИПК 99 Зоолог. Имеет 115 защиты от радиации, 330 слотов, 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка ИПК 99 Зоолог. Имеет 115 защиты от радиации, 450 слотов под вещи, 10 активных слотов под артефакты.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 1,
+                        "description": "Поясная сумка планшет. Имеет 50 защиты от радиации, 800 слотов под вещи, вмещает 10 активных артефактов, имеет крепление для кабуры, фляги ножн.",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны ИПК 99 Зоолог. Имеют 115 защиты от радиации, 450 слотов под вещи.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 1,
+                        "description": "Рюкзак ИПК 99 Зоолог. не имеет защиты от радиации, но вмещает 800 слотов под вещи, 8 крепления под оружие, флягу и 2 рации.",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 1,
+                        "description": "Капюшен ИПК 99 Зоолог. Имеет 115 защиты от радиации, встроено крепление под пнв и фонарь.",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 1,
+                        "description": "Псимофон. Не имеет защиты от радиации.",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Универсальные перчатки Дюраль-M1. Имееют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Универсальные Ботинки ОЗС-M Мастер. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 2830,
+                    "Защита": 85,
+                    "Защита от радиации": 740
+                },
+                "images": [
+                    "images/newsets/IPK_99/IPK_99_A/IPK_99_A_1.png",
+                    "images/newsets/IPK_99/IPK_99_A/IPK_99_A_2.png",
+                    "images/newsets/IPK_99/IPK_99_A/IPK_99_A_3.png",
+                    "images/newsets/IPK_99/IPK_99_A/IPK_99_A_4.png"
+                ]
+            },
+            {
+                "rank": "Вариант В",
+                "description": "Описание ИПК 99/99М.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Жилет ИПК 99 Зоолог. Имеет 115 защиты от радиации, 330 слотов, 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка ИПК 99 Зоолог. Имеет 115 защиты от радиации, 450 слотов под вещи, 10 активных слотов под артефакты.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 1,
+                        "description": "Поясная сумка планшет. Имеет 50 защиты от радиации, 800 слотов под вещи, вмещает 10 активных артефактов, имеет крепление для кабуры, фляги ножн.",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны ИПК 99 Зоолог. Имеют 115 защиты от радиации, 450 слотов под вещи.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 1,
+                        "description": "Рюкзак ИПК 99 Зоолог. не имеет защиты от радиации, но вмещает 800 слотов под вещи, 8 крепления под оружие, флягу и 2 рации.",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 1,
+                        "description": "Капюшен ИПК 99 Зоолог. Имеет 115 защиты от радиации, встроено крепление под пнв и фонарь.",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 1,
+                        "description": "Псимофон. Не имеет защиты от радиации.",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Универсальные перчатки Дюраль-M1. Имееют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Универсальные Ботинки ОЗС-M Мастер. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 2830,
+                    "Защита": 85,
+                    "Защита от радиации": 740
+                },
+                "images": [
+                    "images/newsets/IPK_99/IPK_99_B/IPK_99_B_1.png",
+                    "images/newsets/IPK_99/IPK_99_B/IPK_99_B_2.png",
+                    "images/newsets/IPK_99/IPK_99_B/IPK_99_B_3.png",
+                    "images/newsets/IPK_99/IPK_99_B/IPK_99_B_4.png"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ИПК-100/100М",
+        "variants": [
+            {
+                "rank": "Легенда Х",
+                "description": "Описание ИПК-100/100М.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Компрессорная система ИПК-100. Имеет 115 защиты от радиации, 330 слотов, 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка ИПК-100. Имеет 115 защиты от радиации, 450 слотов под вещи, 10 активных слотов под артефакты, 2 слота под нашивки.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны ИПК-100. Имеют 115 защиты от радиации, 450 слотов под вещи.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 1,
+                        "description": "Рюкзак ИПК-100. не имеет защиты от радиации, но вмещает 800 слотов под вещи, 8 крепления под оружие, флягу и 2 рации.",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 1,
+                        "description": "Шлем ИПК-100. Имеет 115 защиты от радиации, встроено крепление под пнв.",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Перчатки ИПК-100. Имееют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Ботинки ИПК-100. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 2030,
+                    "Защита": 85,
+                    "Защита от радиации": 690
+                },
+                "images": [
+                    "images/newsets/IPK_100M/ipk_1.png",
+                    "images/newsets/IPK_100M/ipk_2.png",
+                    "images/newsets/IPK_100M/ipk_3.png"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ОЗС-9М",
+        "variants": [
+            {
+                "rank": "Легенда Х",
+                "description": "Описание ОЗС-9М.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Жилет ОЗС-9М. Имеет 115 защиты от радиации, 330 слотов, 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка ОЗС-9М. Имеет 115 защиты от радиации, 450 слотов под вещи, 10 активных слотов под артефакты, 2 слота под нашивки и ножны.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны ОЗС-9М. Имеют 115 защиты от радиации, 450 слотов под вещи.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 1,
+                        "description": "Рюкзак ОЗС-9М. не имеет защиты от радиации, но вмещает 800 слотов под вещи, 8 крепления под оружие, флягу и 2 рации.",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 1,
+                        "description": "Капюшон ОЗС-9М. Имеет 115 защиты от радиации, встроено крепление под пнв, фонарик, металическую вставку.",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Универсальные перчатки Дюраль-M1. Имееют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Ботинки ОЗС-9М. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 2030,
+                    "Защита": 85,
+                    "Защита от радиации": 690
+                },
+                "images": [
+                    "images/newsets/OZS_9M/OZS_9M_1.png",
+                    "images/newsets/OZS_9M/OZS_9M_2.png",
+                    "images/newsets/OZS_9M/OZS_9M_3.png",
+                    "images/newsets/OZS_9M/OZS_9M_4.png",
+                    "images/newsets/OZS_9M/OZS_9M_5.png",
+                    "images/newsets/OZS_9M/OZS_9M_6.png",
+                    "images/newsets/OZS_9M/OZS_9M_7.png",
+                    "images/newsets/OZS_9M/OZS_9M_8.png"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Восход",
+        "variants": [
+            {
+                "rank": "Легенда Х",
+                "description": "Описание Восход.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Жилет Восход. Имеет 115 защиты от радиации, 330 слотов, 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка Восход. Имеет 115 защиты от радиации, 450 слотов под вещи, 10 активных слотов под артефакты, 2 слота под нашивки и ножны.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны Восход. Имеют 115 защиты от радиации, 450 слотов под вещи и 2 крепления под подсумки.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 1,
+                        "description": "Противогаз ГП-10. Имеет 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Универсальные перчатки Дюраль-M1. Имееют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Ботинки ОЗС-9М. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 1230,
+                    "Защита": 85,
+                    "Защита от радиации": 690
+                },
+                "images": [
+                    "images/newsets/Voshod/Voshod_1.png",
+                    "images/newsets/Voshod/Voshod_2.png",
+                    "images/newsets/Voshod/Voshod_3.png",
+                    "images/newsets/Voshod/Voshod_4.png",
+                    "images/newsets/Voshod/Voshod_5.png",
+                    "images/newsets/Voshod/Voshod_6.png"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ОЗС-М",
+        "variants": [
+            {
+                "rank": "Легенда Х",
+                "description": "Описание ОЗС-М.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Жилет ОЗС-М Мастер. Имеет 115 защиты от радиации, 330 слотов, 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка ОЗС-М Мастер. Имеет 115 защиты от радиации, 450 слотов под вещи, 10 активных слотов под артефакты, 2 слота под нашивки и ножны.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны ОЗС-М Мастер. Имеют 115 защиты от радиации, 450 слотов под вещи и 2 крепления под подсумки.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 1,
+                        "description": "Противогаз ГП-10. Имеет 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Универсальные перчатки Дюраль-M1. Имееют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Ботинки ОЗС-9М. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 1230,
+                    "Защита": 85,
+                    "Защита от радиации": 690
+                },
+                "images": [
+                    "images/newsets/OZS_M/OZS_M_A/OZS_M_A_1.png",
+                    "images/newsets/OZS_M/OZS_M_A/OZS_M_A_2.png",
+                    "images/newsets/OZS_M/OZS_M_A/OZS_M_A_3.png",
+                    "images/newsets/OZS_M/OZS_M_A/OZS_M_A_4.png"
+                ]
+            },
+            {
+                "rank": "Вариант В",
+                "description": "Описание ОЗС-М.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Плащ Защитный покров. Имеет 115 защиты от радиации, 330 слотов, 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка ОЗС-М Мастер. Имеет 115 защиты от радиации, 450 слотов под вещи, 10 активных слотов под артефакты, 2 слота под нашивки и ножны.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны ОЗС-М Мастер. Имеют 115 защиты от радиации, 450 слотов под вещи и 2 крепления под подсумки.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 1,
+                        "description": "Противогаз ГП-10. Имеет 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Универсальные перчатки Дюраль-M1. Имееют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Ботинки ОЗС-9М. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 1230,
+                    "Защита": 85,
+                    "Защита от радиации": 690
+                },
+                "images": [
+                    "images/newsets/CPE_10B/CPE_10B_A/CPE_10B_A_1.png",
+                    "images/newsets/CPE_10B/CPE_10B_A/CPE_10B_A_2.png"
+                ]
+            }
+        ]
     }
 ]

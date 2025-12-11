@@ -1266,7 +1266,8 @@
                             "images/slots/Boots.png"
                         ]
                     },
-                    {   "bandage": 1,
+                    {
+                        "bandage": 1,
                         "description": "Плащ. Имеет 44 защиты от радиации.",
                         "images": [
                             "images/slots/Bandage.png"
@@ -1358,7 +1359,8 @@
                             "images/slots/Boots.png"
                         ]
                     },
-                    {   "bandage": 1,
+                    {
+                        "bandage": 1,
                         "description": "Плащ. Имеет 50 защиты от радиации.",
                         "images": [
                             "images/slots/Bandage.png"
@@ -2127,6 +2129,996 @@
                     "images/combat/Warfaiter/Warfaiter_6.png",
                     "images/combat/Warfaiter/Warfaiter_7.png",
                     "images/combat/Warfaiter/Warfaiter_8.png"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Бандит",
+        "variants": [
+            {
+                "rank": "Легенда Х",
+                "description": "Описание Бандит.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Длинный Кожаный Плаш. Имеет 50 защиты от радиации, 330 слотов под вещи и 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Свитер. Имеет 50 защиты от радиации, 450 слотов под вещи и 10 активных слотов под артефакты.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 1,
+                        "description": "Универсальный Ремень с подсумками. Имеет 50 защиты от радиации, 800 слотов под вещи, 10 активных слотов под артефакты и крепления под кабуру,ножны, флягу.",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны Рекрут. Имеют 50 защиты от радиации, 450 слотов под вещи.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 1,
+                        "description": "Балаклава. Имеет 50 защиты от радиации.",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Перчатки ОЗС-9П Кремний. Имею 50 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Универсальные Ботинки ОЗС-М Мастер. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 2030,
+                    "Защита": 90,
+                    "Защита от радиации": 415
+                },
+                "images": [
+                    "images/newsets/Bandit_Plash/Bandit_Plash_1.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_2.png"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "СПЕ-10в",
+        "variants": [
+            {
+                "rank": "Легенда Х",
+                "description": "Описание СПЕ-10в.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Бронижилет СПЕ-10в. Имеет 50 защиты от радиации, 330 слотов под вещи, 3 крепления подсумков и 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка СПЕ-10в. Имеет 50 защиты от радиации, 450 слотов под вещи и 10 активных слотов под артефакты 2 слота под нашивки.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 1,
+                        "description": "Универсальный Ремень с подсумками. Имеет 50 защиты от радиации, 800 слотов под вещи, 10 активных слотов под артефакты и крепления под кабуру,ножны, флягу.",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны СПЕ-10в. Имеют 50 защиты от радиации, 450 слотов под вещи, 2 крепления под подсумки, кобуру и ножны.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 1,
+                        "description": "Шлем СНД8. Имеет 50 защиты от радиации, крепления под фонарик и ПНВ.",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 1,
+                        "description": "Противогаз ХМ-40. Имеет 50 защиты от радиации.",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Универсальные Перчатки Дюраль-М1. Имею 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Универсальные Ботинки ОЗС-М Мастер. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 2030,
+                    "Защита": 90,
+                    "Защита от радиации": 530
+                },
+                "images": [
+                    "images/newsets/CPE_10B/CPE_10B_A/CPE_10B_A_1.png",
+                    "images/newsets/CPE_10B/CPE_10B_A/CPE_10B_A_2.png"
+                ]
+            },
+            {
+                "rank": "Вариант В",
+                "description": "Описание СПЕ-10в.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Бронижилет СПЕ-10в. Имеет 50 защиты от радиации, 330 слотов под вещи, 3 крепления подсумков и 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка СПЕ-10в. Имеет 50 защиты от радиации, 450 слотов под вещи и 10 активных слотов под артефакты 2 слота под нашивки.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 1,
+                        "description": "Универсальный Ремень с подсумками. Имеет 50 защиты от радиации, 800 слотов под вещи, 10 активных слотов под артефакты и крепления под кабуру,ножны, флягу.",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны СПЕ-10в. Имеют 50 защиты от радиации, 450 слотов под вещи, 2 крепления под подсумки, кобуру и ножны.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 1,
+                        "description": "Шлем СНД8. Имеет 50 защиты от радиации, крепления под фонарик и ПНВ.",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 1,
+                        "description": "Противогаз ХМ-40. Имеет 50 защиты от радиации.",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Универсальные Перчатки Дюраль-М1. Имею 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Универсальные Ботинки ОЗС-М Мастер. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 2030,
+                    "Защита": 90,
+                    "Защита от радиации": 530
+                },
+                "images": [
+                    "images/newsets/CPE_10B/CPE_10B_B/CPE_10B_B_1.png",
+                    "images/newsets/CPE_10B/CPE_10B_B/CPE_10B_B_2.png"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "СПЕ-13Т",
+        "variants": [
+            {
+                "rank": "Легенда Х",
+                "description": "Описание СПЕ-13Т.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Бронижилет СПЕ-13Т. Имеет 50 защиты от радиации, 330 слотов под вещи, 2 крепления подсумков и 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка СПЕ-13Т. Имеет 50 защиты от радиации, 450 слотов под вещи и 10 активных слотов под артефакты 2 слота под нашивки.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны СПЕ-13Т. Имеют 50 защиты от радиации, 450 слотов под вещи.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 1,
+                        "description": "Комплект экзоскелета. Не имеет защиты от радиации, но вмещает 800 слотов, 8 креплений под оружие, 2 крепления под рацию и флягу.",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 1,
+                        "description": "Шлем АРП-106. Имеет 50 защиты от радиации, крепления под фонарик и ПНВ.",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 1,
+                        "description": "Противогаз ППМ-65. Имеет 50 защиты от радиации.",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Универсальные Перчатки Дюраль-М1. Имею 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Универсальные Ботинки ОЗС-М Мастер. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 2030,
+                    "Защита": 90,
+                    "Защита от радиации": 480
+                },
+                "images": [
+                    "images/newsets/CPE_13T/CPE_13T_A/CPE_13T_A_1.png",
+                    "images/newsets/CPE_13T/CPE_13T_A/CPE_13T_A_2.png",
+                    "images/newsets/CPE_13T/CPE_13T_A/CPE_13T_A_3.png",
+                    "images/newsets/CPE_13T/CPE_13T_A/CPE_13T_A_4.png",
+                    "images/newsets/CPE_13T/CPE_13T_A/CPE_13T_A_5.png",
+                    "images/newsets/CPE_13T/CPE_13T_A/CPE_13T_A_6.png",
+                    "images/newsets/CPE_13T/CPE_13T_A/CPE_13T_A_7.png"
+                ]
+            },
+            {
+                "rank": "Вариант В",
+                "description": "Описание СПЕ-13Т.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Бронижилет СПЕ-10в. Имеет 50 защиты от радиации, 330 слотов под вещи, 3 крепления подсумков и 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка СПЕ-10в. Имеет 50 защиты от радиации, 450 слотов под вещи и 10 активных слотов под артефакты 2 слота под нашивки.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 1,
+                        "description": "Универсальный Ремень с подсумками. Имеет 50 защиты от радиации, 800 слотов под вещи, 10 активных слотов под артефакты и крепления под кабуру,ножны, флягу.",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны СПЕ-10в. Имеют 50 защиты от радиации, 450 слотов под вещи, 2 крепления под подсумки, кобуру и ножны.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 1,
+                        "description": "Шлем СНД8. Имеет 50 защиты от радиации, крепления под фонарик и ПНВ.",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 1,
+                        "description": "Противогаз ХМ-40. Имеет 50 защиты от радиации.",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Универсальные Перчатки Дюраль-М1. Имею 50 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Универсальные Ботинки ОЗС-М Мастер. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 2030,
+                    "Защита": 90,
+                    "Защита от радиации": 480
+                },
+                "images": [
+                    "images/newsets/CPE_13T/CPE_13T_B/CPE_13T_B_1.png",
+                    "images/newsets/CPE_13T/CPE_13T_B/CPE_13T_B_2.png",
+                    "images/newsets/CPE_13T/CPE_13T_B/CPE_13T_B_3.png",
+                    "images/newsets/CPE_13T/CPE_13T_B/CPE_13T_B_4.png",
+                    "images/newsets/CPE_13T/CPE_13T_B/CPE_13T_B_5.png",
+                    "images/newsets/CPE_13T/CPE_13T_B/CPE_13T_B_6.png",
+                    "images/newsets/CPE_13T/CPE_13T_B/CPE_13T_B_7.png"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ОЗС-9Д",
+        "variants": [
+            {
+                "rank": "Легенда Х",
+                "description": "Описание ОЗС-9Д.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Жилет ОЗС-9Д. Имеет 50 защиты от радиации, 330 слотов под вещи и 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка ОЗС-9Д. Имеет 50 защиты от радиации, 450 слотов под вещи, 10 активных слотов под артефакты и 2 слота под нашивки.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны ОЗС-9Д. Имеют 50 защиты от радиации, 450 слотов под вещи и 2 крепления для подсумков.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 1,
+                        "description": "Шлем ОЗС-12П. Имеет 50 Защиты от радиации, крепления под фонарь и ПНВ.",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 1,
+                        "description": "Противогаз ХМ-40. Имеет 50 защиты от радиации.",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Универсальные Перчатки Дюраль-М1. Имею 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Универсальные Ботинки ОЗС-М Мастер. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 1230,
+                    "Защита": 90,
+                    "Защита от радиации": 480
+                },
+                "images": [
+                    "images/newsets/OZS_9D/OZS_9D_1.png",
+                    "images/newsets/OZS_9D/OZS_9D_2.png",
+                    "images/newsets/OZS_9D/OZS_9D_3.png",
+                    "images/newsets/OZS_9D/OZS_9D_4.png"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ОЗС-9П",
+        "variants": [
+            {
+                "rank": "Легенда Х",
+                "description": "Описание ОЗС-9П.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Жилет ОЗС-9П. Имеет 50 защиты от радиации, 330 слотов под вещи, 8 креплений под магазины и 3 крепления для подсумков.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка ОЗС-9П. Имеет 50 защиты от радиации, 450 слотов под вещи, 10 активных слотов под артефакты и 2 слота под нашивки.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны ОЗС-9П. Имеют 50 защиты от радиации, 450 слотов под вещи, крепление подсумка, ножн и кабуры.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Перчатки ОЗС-9П. Имею 50 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Универсальные Ботинки ОЗС-М Мастер. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 1230,
+                    "Защита": 90,
+                    "Защита от радиации": 315
+                },
+                "images": [
+                    "images/newsets/OZS_9P/OZS_9P_1.png",
+                    "images/newsets/OZS_9P/OZS_9P_2.png"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ОЗС-12П",
+        "variants": [
+            {
+                "rank": "Легенда Х",
+                "description": "Описание ОЗС-12П.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Жилет ОЗС-12П. Имеет 50 защиты от радиации, 330 слотов под вещи, 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка ОЗС-12П. Имеет 50 защиты от радиации, 450 слотов под вещи, 10 активных слотов под артефакты и 2 слота под нашивки.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны ОЗС-12П. Имеют 50 защиты от радиации, 450 слотов под вещи, 2 крепления подсумков.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 1,
+                        "description": "Шлем ОЗС-12П. Имеет 50 защиты от радиации, крепления под фонарь и ПНВ.",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 1,
+                        "description": "Противогаз ПМК-20. Имеет 50 защиты от радиации.",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Универсальные Перчатки Дюраль-М1. Имею 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Универсальные Ботинки ОЗС-М Мастер. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 1230,
+                    "Защита": 90,
+                    "Защита от радиации": 480
+                },
+                "images": [
+                    "images/newsets/OZS_12P/OZS_12P_1.png",
+                    "images/newsets/OZS_12P/OZS_12P_2.png",
+                    "images/newsets/OZS_12P/OZS_12P_3.png"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Рекрут",
+        "variants": [
+            {
+                "rank": "Легенда Х",
+                "description": "Описание Рекрута.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Жилет Рекрута. Имеет 50 защиты от радиации, 330 слотов под вещи, 8 креплений под магазины, 4 крепления подсумков, крепление ножн и фляги.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка Рекрут. Имеет 50 защиты от радиации, 450 слотов под вещи, 10 активных слотов под артефакты и 2 слота под нашивки.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны Рекрут. Имеют 50 защиты от радиации, 450 слотов под вещи, 1 крепление ножн.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 1,
+                        "description": "Противогаз ГП-4У. Имеет 50 защиты от радиации.",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Универсальные Перчатки Дюраль-М1. Имею 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Универсальные Ботинки ОЗС-М Мастер. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 1230,
+                    "Защита": 90,
+                    "Защита от радиации": 430
+                },
+                "images": [
+                    "images/newsets/Recryt/Recryt_1.png",
+                    "images/newsets/Recryt/Recryt_2.png",
+                    "images/newsets/Recryt/Recryt_3.png",
+                    "images/newsets/Recryt/Recryt_4.png"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "РУтил-6Д",
+        "variants": [
+            {
+                "rank": "Легенда Х",
+                "description": "Описание РУтил-6Д.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Жилет РУтил-6Д. Имеет 50 защиты от радиации, 330 слотов под вещи, 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка РУтил-6Д. Имеет 50 защиты от радиации, 450 слотов под вещи, 10 активных слотов под артефакты и 2 слота под нашивки.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны РУтил-6Д. Имеют 50 защиты от радиации, 450 слотов под вещи, 1 крепление подсумков, ножн, кабуры.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 1,
+                        "description": "Шлем РУтил-6Д. Имеет 50 защиты от радиации, крепление под ПНВ и фонарь.",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 1,
+                        "description": "Очки РУтил-6Д. Не имеют защиты от радиации.",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Универсальные Перчатки Дюраль-М1. Имею 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Универсальные Ботинки ОЗС-М Мастер. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 1230,
+                    "Защита": 90,
+                    "Защита от радиации": 430
+                },
+                "images": [
+                    "images/newsets/RYTIL_6D/RYTIL_6D_A/RYTIL_6D_A_1.png",
+                    "images/newsets/RYTIL_6D/RYTIL_6D_A/RYTIL_6D_A_2.png"
+                ]
+            },
+            {
+                "rank": "Вариант В",
+                "description": "Описание РУтил-6Д.",
+                "slots": [
+                    {
+                        "vest": 1,
+                        "description": "Жилет РУтил-6Д. Имеет 50 защиты от радиации, 330 слотов под вещи, 8 креплений под магазины.",
+                        "images": [
+                            "images/slots/Vest.png"
+                        ]
+                    },
+                    {
+                        "jacket": 1,
+                        "description": "Куртка РУтил-6Д. Имеет 50 защиты от радиации, 450 слотов под вещи, 10 активных слотов под артефакты и 2 слота под нашивки.",
+                        "images": [
+                            "images/slots/Jacket.png"
+                        ]
+                    },
+                    {
+                        "belt": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Belt.png"
+                        ]
+                    },
+                    {
+                        "pants": 1,
+                        "description": "Штаны РУтил-6Д. Имеют 50 защиты от радиации, 450 слотов под вещи, 1 крепление подсумков, ножн, кабуры.",
+                        "images": [
+                            "images/slots/Pants.png"
+                        ]
+                    },
+                    {
+                        "backpack": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Backpack.png"
+                        ]
+                    },
+                    {
+                        "helmet": 1,
+                        "description": "Шлем РУтил-6Д. Имеет 50 защиты от радиации, крепление под ПНВ и фонарь.",
+                        "images": [
+                            "images/slots/Helmet.png"
+                        ]
+                    },
+                    {
+                        "mask": 0,
+                        "description": "",
+                        "images": [
+                            "images/slots/Mask.png"
+                        ]
+                    },
+                    {
+                        "glasses": 1,
+                        "description": "Очки РУтил-6Д. Не имеют защиты от радиации.",
+                        "images": [
+                            "images/slots/Glasses.png"
+                        ]
+                    },
+                    {
+                        "gloves": 1,
+                        "description": "Универсальные Перчатки Дюраль-М1. Имею 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Gloves.png"
+                        ]
+                    },
+                    {
+                        "boots": 1,
+                        "description": "Универсальные Ботинки ОЗС-М Мастер. Имеют 115 защиты от радиации.",
+                        "images": [
+                            "images/slots/Boots.png"
+                        ]
+                    }
+                ],
+                "stats": {
+                    "Общее кол-во слотов": 1230,
+                    "Защита": 90,
+                    "Защита от радиации": 430
+                },
+                "images": [
+                    "images/newsets/RYTIL_6D/RYTIL_6D_B/RYTIL_6D_B_1.png",
+                    "images/newsets/RYTIL_6D/RYTIL_6D_B/RYTIL_6D_B_2.png"
                 ]
             }
         ]
