@@ -154,6 +154,8 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .image-wrap img {
+    max-width: 256px;
+    max-height: 256px;
     max-width: 100%;
     border-radius: 8px;
     border: 1px solid #333;
