@@ -2220,7 +2220,22 @@
                 },
                 "images": [
                     "images/newsets/Bandit_Plash/Bandit_Plash_1.png",
-                    "images/newsets/Bandit_Plash/Bandit_Plash_2.png"
+                    "images/newsets/Bandit_Plash/Bandit_Plash_2.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_3.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_4.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_5.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_6.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_7.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_8.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_9.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_10.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_11.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_12.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_13.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_14.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_15.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_16.png",
+                    "images/newsets/Bandit_Plash/Bandit_Plash_17.png"
                 ]
             }
         ]
@@ -2309,93 +2324,12 @@
                     "Защита от радиации": 530
                 },
                 "images": [
-                    "images/newsets/CPE_10B/CPE_10B_A/CPE_10B_A_1.png",
-                    "images/newsets/CPE_10B/CPE_10B_A/CPE_10B_A_2.png"
-                ]
-            },
-            {
-                "rank": "Вариант В",
-                "description": "Описание СПЕ-10в.",
-                "slots": [
-                    {
-                        "vest": 1,
-                        "description": "Бронижилет СПЕ-10в — Защита от радиации: 50. Вместимость: 330 слотов. Крепления: 3 подсумка, 8 магазинов. Активные артефакты: .",
-                        "images": [
-                            "images/slots/Vest.png"
-                        ]
-                    },
-                    {
-                        "jacket": 1,
-                        "description": "Куртка СПЕ-10в — Защита от радиации: 50. Вместимость: 450 слотов. Крепления: 2 нашивки. Активные артефакты: 10.",
-                        "images": [
-                            "images/slots/Jacket.png"
-                        ]
-                    },
-                    {
-                        "belt": 1,
-                        "description": "Универсальный Ремень с подсумками — Защита от радиации: 50. Вместимость: 800 слотов. Крепления: кабура, ножны, фляга. Активные артефакты: 10.",
-                        "images": [
-                            "images/slots/Belt.png"
-                        ]
-                    },
-                    {
-                        "pants": 1,
-                        "description": "Штаны СПЕ-10в — Защита от радиации: 50. Вместимость: 450 слотов. Крепления: 2 подсумка, кобура, ножны. Активные артефакты: .",
-                        "images": [
-                            "images/slots/Pants.png"
-                        ]
-                    },
-                    {
-                        "backpack": 0,
-                        "description": "",
-                        "images": [
-                            "images/slots/Backpack.png"
-                        ]
-                    },
-                    {
-                        "helmet": 1,
-                        "description": "Шлем СНД8 — Защита от радиации: 50. Вместимость: 0 слотов. Крепления: фонарик, ПНВ. Активные артефакты: .",
-                        "images": [
-                            "images/slots/Helmet.png"
-                        ]
-                    },
-                    {
-                        "mask": 1,
-                        "description": "Противогаз ХМ-40 — Защита от радиации: 50. Вместимость: 0 слотов. Крепления: . Активные артефакты: .",
-                        "images": [
-                            "images/slots/Mask.png"
-                        ]
-                    },
-                    {
-                        "glasses": 0,
-                        "description": "",
-                        "images": [
-                            "images/slots/Glasses.png"
-                        ]
-                    },
-                    {
-                        "gloves": 1,
-                        "description": "Универсальные Перчатки Дюраль-М1 — Защита от радиации: 115. Вместимость: 0 слотов. Крепления: . Активные артефакты: .",
-                        "images": [
-                            "images/slots/Gloves.png"
-                        ]
-                    },
-                    {
-                        "boots": 1,
-                        "description": "Универсальные Ботинки ОЗС-М Мастер — Защита от радиации: 115. Вместимость: 0 слотов. Крепления: . Активные артефакты: .",
-                        "images": [
-                            "images/slots/Boots.png"
-                        ]
-                    }
-                ],
-                "stats": {
-                    "Общее кол-во слотов": 2030,
-                    "Защита": 90,
-                    "Защита от радиации": 530
-                },
-                "images": [
-                    "images/newsets/CPE_10B/CPE_10B_B/CPE_10B_B_1.png",
-                    "images/newsets/CPE_10B/CPE_10B_B/CPE_10B_B_2.png"
+                    "images/newsets/CPE_10B/CPE_10B/CPE_10B_1.png",
+                    "images/newsets/CPE_10B/CPE_10B/CPE_10B_2.png",
+                    "images/newsets/CPE_10B/CPE_10B/CPE_10B_3.png",
+                    "images/newsets/CPE_10B/CPE_10B/CPE_10B_4.png",
+                    "images/newsets/CPE_10B/CPE_10B/CPE_10B_5.png",
+                    "images/newsets/CPE_10B/CPE_10B/CPE_10B_6.png"
                 ]
             }
         ]
@@ -2945,7 +2879,9 @@
                     "images/newsets/Recryt/Recryt_1.png",
                     "images/newsets/Recryt/Recryt_2.png",
                     "images/newsets/Recryt/Recryt_3.png",
-                    "images/newsets/Recryt/Recryt_4.png"
+                    "images/newsets/Recryt/Recryt_4.png",
+                    "images/newsets/Recryt/Recryt_5.png",
+                    "images/newsets/Recryt/Recryt_6.png"
                 ]
             }
         ]
@@ -3034,24 +2970,31 @@
                     "Защита от радиации": 430
                 },
                 "images": [
-                    "images/newsets/RYTIL_6D/RYTIL_6D_A/RYTIL_6D_A_1.png",
-                    "images/newsets/RYTIL_6D/RYTIL_6D_A/RYTIL_6D_A_2.png"
+                    "images/newsets/RYTIL_6D/RYTIL_6D_1.png",
+                    "images/newsets/RYTIL_6D/RYTIL_6D_2.png",
+                    "images/newsets/RYTIL_6D/RYTIL_6D_3.png",
+                    "images/newsets/RYTIL_6D/RYTIL_6D_4.png"
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "name": "ОЗС-20/25",
+        "variants": [
             {
-                "rank": "Вариант В",
-                "description": "Описание Рутил-6Д.",
+                "rank": "Легенда Х",
+                "description": "Описание ОЗС-20/25.",
                 "slots": [
                     {
                         "vest": 1,
-                        "description": "Жилет Рутил-6Д — Защита от радиации: 50. Вместимость: 330 слотов. Крепления: 8 магазинов. Активные артефакты: .",
+                        "description": "Средний Бронежилет ОЗС-20 — Защита от радиации: 50. Вместимость: 330 слотов. Крепления: 8 магазинов. Активные артефакты: .",
                         "images": [
                             "images/slots/Vest.png"
                         ]
                     },
                     {
                         "jacket": 1,
-                        "description": "Куртка Рутил-6Д — Защита от радиации: 50. Вместимость: 450 слотов. Крепления: 2 нашивки. Активные артефакты: 10.",
+                        "description": "Куртка ОЗС-20 — Защита от радиации: 50. Вместимость: 450 слотов. Крепления: . Активные артефакты: 10.",
                         "images": [
                             "images/slots/Jacket.png"
                         ]
@@ -3065,7 +3008,7 @@
                     },
                     {
                         "pants": 1,
-                        "description": "Штаны Рутил-6Д — Защита от радиации: 50. Вместимость: 450 слотов. Крепления: подсумок, ножны, кабура. Активные артефакты: .",
+                        "description": "Штаны ОЗС-20 — Защита от радиации: 50. Вместимость: 450 слотов. Крепления: 2 подсумока. Активные артефакты: .",
                         "images": [
                             "images/slots/Pants.png"
                         ]
@@ -3079,7 +3022,7 @@
                     },
                     {
                         "helmet": 1,
-                        "description": "Шлем Рутил-6Д — Защита от радиации: 50. Вместимость: 0 слотов. Крепления: ПНВ, фонарь. Активные артефакты: .",
+                        "description": "Шлем ОЗС-20 — Защита от радиации: 50. Вместимость: 0 слотов. Крепления: ПНВ, фонарь. Активные артефакты: .",
                         "images": [
                             "images/slots/Helmet.png"
                         ]
@@ -3092,8 +3035,8 @@
                         ]
                     },
                     {
-                        "glasses": 1,
-                        "description": "Очки Рутил-6Д — Защита от радиации: 0. Вместимость: 0 слотов. Крепления: . Активные артефакты: .",
+                        "glasses": 0,
+                        "description": "",
                         "images": [
                             "images/slots/Glasses.png"
                         ]
@@ -3119,8 +3062,8 @@
                     "Защита от радиации": 430
                 },
                 "images": [
-                    "images/newsets/RYTIL_6D/RYTIL_6D_B/RYTIL_6D_B_1.png",
-                    "images/newsets/RYTIL_6D/RYTIL_6D_B/RYTIL_6D_B_2.png"
+                    "images/newsets/OZS_20/OZS_20_1.png",
+                    "images/newsets/OZS_20/OZS_20_2.png"
                 ]
             }
         ]
