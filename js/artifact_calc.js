@@ -173,8 +173,8 @@ function showArtifactProperties(art){
 
   const imgBig = document.createElement("img");
   imgBig.src = variant?.images?.[0] || "";
-  imgBig.style.width = "48px";
-  imgBig.style.height = "48px";
+  imgBig.style.width = "124px";
+  imgBig.style.height = "124px";
   imgBig.style.borderRadius = "6px";
 
   container.appendChild(textDiv);
@@ -253,8 +253,8 @@ function populateArtifactModal(artifacts){
 
     const img=document.createElement("img");
     img.src=a["Варианты"]?.[0]?.images?.[0]||"";
-    img.style.width="24px";
-    img.style.height="24px";
+    img.style.width="48px";
+    img.style.height="48px";
     img.style.borderRadius="4px";
     img.style.marginRight="8px";
 
