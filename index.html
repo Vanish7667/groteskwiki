@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/nav.css"> <!-- отдельный CSS для навигации -->
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
     <header>
@@ -16,43 +16,37 @@
     </header>
 
     <nav>
-    <ul class="tabs">
-        <!-- Главная вкладка без выпадающего списка -->
-        <li>
-            <a href="index.html">Главная</a>
-        </li>
-
-        <!-- Раздел Информация -->
-        <li class="dropdown">
-            <a href="#">Информация</a>
-            <ul class="dropdown-content">
-                <li><a href="rules.html">Правила</a></li>
-                <li><a href="calibers.html">Калибры</a></li>
-                <li><a href="rank.html">Ранг</a></li>
-                <li><a href="anomalies.html">Аномалии</a></li>
-            </ul>
-        </li>
-
-        <!-- Раздел Инструменты -->
-        <li class="dropdown">
-            <a href="#">Инструменты</a>
-            <ul class="dropdown-content">
-                <li><a href="artifact_calc.html">Калькулятор артефактов</a></li>
-                <li><a href="map.html">Карта</a></li>
-            </ul>
-        </li>
-
-        <!-- Раздел Предметы -->
-        <li class="dropdown">
-            <a href="#">Предметы</a>
-            <ul class="dropdown-content">
-                <li><a href="gear.html">Снаряжение</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+        <ul class="tabs">
+            <li><a href="index.html">Главная</a></li>
+            <li class="dropdown">
+                <a href="#">Информация</a>
+                <ul class="dropdown-content">
+                    <li><a href="rules.html">Правила</a></li>
+                    <li><a href="calibers.html">Калибры</a></li>
+                    <li><a href="rank.html">Ранг</a></li>
+                    <li><a href="anomalies.html">Аномалии</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Инструменты</a>
+                <ul class="dropdown-content">
+                    <li><a href="artifact_calc.html">Калькулятор артефактов</a></li>
+                    <li><a href="map.html">Карта</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Предметы</a>
+                <ul class="dropdown-content">
+                    <li><a href="gear.html">Снаряжение</a></li>
+                    <li><a href="knives.html">Ножи</a></li>
+                    <li><a href="artefacts.html">Артефакты</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
     <div class="container">
+        <!-- Левый сайдбар -->
         <aside class="sidebar">
             <a href="https://dayzgrotesk.ru/" target="_blank" class="sidebar-button">Наш магазин</a>
 
@@ -71,11 +65,21 @@
             </section>
         </aside>
 
+        <!-- Основной контент -->
         <main id="content">
             <h2>Добро пожаловать!</h2>
             <p>Здесь собрана вся информация о серверах GroteskStalker PvE в Dayz.</p>
             <p>Используйте вкладки сверху для навигации.</p>
+
+            <!-- Центральная новость -->
+            <div class="main-news" id="mainNews"></div>
         </main>
+
+        <!-- Правый сайдбар (обновления) -->
+        <aside class="sidebar sidebar-updates">
+            <h3>Обновления</h3>
+            <ul id="updatesList"></ul>
+        </aside>
     </div>
 
     <footer>
@@ -83,7 +87,8 @@
         <a href="https://discord.gg/P7NQfqMWRq" target="_blank" class="footer-button">Discord</a></p>
     </footer>
 
-    <script src="js/nav.js"></script> <!-- отдельный JS для навигации -->
-    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/home-updates.js"></script>
 </body>
 </html>

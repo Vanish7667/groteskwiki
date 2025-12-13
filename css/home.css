@@ -1,13 +1,13 @@
-/* Контейнер для контента и сайдбара */
+/* Контейнер для контента и сайдбаров */
 .container {
     display: flex;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 20px auto;
     gap: 20px;
 }
 
-/* Сайдбар слева */
-.sidebar {
+/* Левый и правый сайдбары */
+.sidebar, .sidebar-updates {
     flex: 0 0 250px;
     background-color: #2a2a2a;
     padding: 15px;
@@ -33,12 +33,39 @@
     background-color: #ffaa00;
 }
 
-/* Блок информации о серверах */
-.server-info h3 {
-    color: #ffb000;
-    margin-bottom: 10px;
+/* Основной контент */
+main#content {
+    flex: 1;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
+/* Центральная новость */
+.main-news {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333333;
+    border-left: 6px solid #ffb000;
+    border-radius: 8px;
+}
+
+/* Список обновлений */
+.sidebar-updates ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar-updates li {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    background-color: #333333;
+    border-left: 3px solid #ffb000;
+    border-radius: 5px;
+}
+
+/* Серверный список */
 .server-list {
     list-style: none;
     padding-left: 0;
@@ -53,20 +80,11 @@
     color: #ffb000;
 }
 
-/* Основной контент */
-main#content {
-    flex: 1;
-    background-color: #2a2a2a;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-}
-
-/* Кнопка Discord в футере */
+/* Кнопка Discord */
 .footer-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffb000; /* золотой фон, как кнопка магазина */
+    background-color: #ffb000;
     color: #111111;
     text-decoration: none;
     border-radius: 5px;
@@ -76,5 +94,5 @@ main#content {
 }
 
 .footer-button:hover {
-    background-color: #ffaa00; /* немного светлее при наведении */
+    background-color: #ffaa00;
 }

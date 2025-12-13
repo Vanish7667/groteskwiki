@@ -108,8 +108,8 @@ function updateSelectedList(){
 
     const imgSmall = document.createElement("img");
     imgSmall.src = variant?.images?.[0] || "";
-    imgSmall.style.width = "24px";
-    imgSmall.style.height = "24px";
+    imgSmall.style.width = "32px";
+    imgSmall.style.height = "32px";
     imgSmall.style.borderRadius = "4px";
     imgSmall.style.marginRight = "6px";
 

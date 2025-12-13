@@ -2,24 +2,30 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <title>Артефакты — GroteskStalker PvE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аномалии — GroteskStalker PvE</title>
 
+    <!-- Шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <!-- Стили -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/anomalies.css">
+    <link rel="stylesheet" href="css/artefacts.css">
+
+    <!-- Скрипты -->
     <script src="js/nav.js" defer></script>
-    <script src="js/anomalies.js" defer></script>
+    <script src="js/artefacts.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Аномалии</h1>
-    </header>
 
-    <!-- Навигация -->
-    <nav>
-        <ul class="tabs">
-            <li><a href="index.html">Главная</a></li>
+<header>
+    <h1>Артефакты</h1>
+</header>
+
+<nav>
+    <ul class="tabs">
+        <li><a href="index.html">Главная</a></li>
             <li class="dropdown">
                 <a href="#">Информация</a>
                 <ul class="dropdown-content">
@@ -41,32 +47,23 @@
                 <ul class="dropdown-content">
                     <li><a href="gear.html">Снаряжение</a></li>
                     <li><a href="knives.html">Ножи</a></li>
-                    <li><a href="artefacts.html">Артефакты</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="container anomalies-container">
-        <!-- Список аномалий -->
-        <aside class="anomaly-list">
-            <ul id="anomalies-list">
-                <!-- Заполняется JS -->
+                <li><a href="artefacts.html" class="active">Артефакты</a></li>
             </ul>
-        </aside>
+        </li>
+    </ul>
+</nav>
 
-        <!-- Карточка с описанием -->
-        <main class="anomaly-detail" id="anomaly-detail">
-    <h2>Выберите аномалию</h2>
-
-    <img id="anomaly-image" style="display:none;">
-
-    <video id="anomaly-video" autoplay loop muted playsinline style="display:none; width:800px; height:400px; object-fit:cover;">
-    <source id="anomaly-video-source" src="" type="video/mp4">
-</video>
-
-    <p id="anomaly-description"></p>
+<main>
+    <div class="artefact-grid" id="artefactGrid"></div>
 </main>
+
+<!-- Модальное окно -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal-window" id="modalWindow">
+        <button class="modal-close" id="modalClose">✕</button>
+        <div id="modalContent"></div>
     </div>
+</div>
+
 </body>
 </html>

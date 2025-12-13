@@ -1,23 +1,9 @@
-const editBtn = document.getElementById('edit-btn');
 const content = document.getElementById('content');
 
-editBtn.addEventListener('click', () => {
-    if (!content.isContentEditable) {
-        content.contentEditable = "true";
-        content.focus();
-        editBtn.textContent = "Сохранить";
-        editBtn.style.backgroundColor = "#d48800"; // чуть темнее при сохранении
-    } else {
-        content.contentEditable = "false";
-        editBtn.textContent = "Редактировать";
-        editBtn.style.backgroundColor = "#ffb000";
-        localStorage.setItem('wikiContent', content.innerHTML);
-    }
-});
-
 document.addEventListener('DOMContentLoaded', () => {
+    // Восстанавливаем сохранённый контент, если есть
     const savedContent = localStorage.getItem('wikiContent');
-    if (savedContent) {
+    if (savedContent && content) {
         content.innerHTML = savedContent;
     }
 });
