@@ -2219,23 +2219,23 @@
                     "Защита от радиации": 415
                 },
                 "images": [
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_1.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_2.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_3.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_4.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_5.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_6.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_7.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_8.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_9.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_10.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_11.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_12.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_13.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_14.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_15.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_16.png",
-                    "images/gear/combat /Bandit_Plash/Bandit_Plash_17.png"
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_1.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_2.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_3.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_4.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_5.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_6.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_7.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_8.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_9.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_10.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_11.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_12.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_13.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_14.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_15.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_16.png",
+                    "images/gear/combat/Bandit_Plash/Bandit_Plash_17.png"
                 ]
             }
         ]
@@ -2324,12 +2324,12 @@
                     "Защита от радиации": 530
                 },
                 "images": [
-                    "images/gear/combat /CPE_10B/CPE_10B/CPE_10B_1.png",
-                    "images/gear/combat /CPE_10B/CPE_10B/CPE_10B_2.png",
-                    "images/gear/combat /CPE_10B/CPE_10B/CPE_10B_3.png",
-                    "images/gear/combat /CPE_10B/CPE_10B/CPE_10B_4.png",
-                    "images/gear/combat /CPE_10B/CPE_10B/CPE_10B_5.png",
-                    "images/gear/combat /CPE_10B/CPE_10B/CPE_10B_6.png"
+                    "images/gear/combat/CPE_10B/CPE_10B/CPE_10B_1.png",
+                    "images/gear/combat/CPE_10B/CPE_10B/CPE_10B_2.png",
+                    "images/gear/combat/CPE_10B/CPE_10B/CPE_10B_3.png",
+                    "images/gear/combat/CPE_10B/CPE_10B/CPE_10B_4.png",
+                    "images/gear/combat/CPE_10B/CPE_10B/CPE_10B_5.png",
+                    "images/gear/combat/CPE_10B/CPE_10B/CPE_10B_6.png"
                 ]
             }
         ]
@@ -2418,13 +2418,13 @@
                     "Защита от радиации": 480
                 },
                 "images": [
-                    "images/gear/combat /CPE_13T/CPE_13T_A/CPE_13T_A_1.png",
-                    "images/gear/combat /CPE_13T/CPE_13T_A/CPE_13T_A_2.png",
-                    "images/gear/combat /CPE_13T/CPE_13T_A/CPE_13T_A_3.png",
-                    "images/gear/combat /CPE_13T/CPE_13T_A/CPE_13T_A_4.png",
-                    "images/gear/combat /CPE_13T/CPE_13T_A/CPE_13T_A_5.png",
-                    "images/gear/combat /CPE_13T/CPE_13T_A/CPE_13T_A_6.png",
-                    "images/gear/combat /CPE_13T/CPE_13T_A/CPE_13T_A_7.png"
+                    "images/gear/combat/CPE_13T/CPE_13T_A/CPE_13T_A_1.png",
+                    "images/gear/combat/CPE_13T/CPE_13T_A/CPE_13T_A_2.png",
+                    "images/gear/combat/CPE_13T/CPE_13T_A/CPE_13T_A_3.png",
+                    "images/gear/combat/CPE_13T/CPE_13T_A/CPE_13T_A_4.png",
+                    "images/gear/combat/CPE_13T/CPE_13T_A/CPE_13T_A_5.png",
+                    "images/gear/combat/CPE_13T/CPE_13T_A/CPE_13T_A_6.png",
+                    "images/gear/combat/CPE_13T/CPE_13T_A/CPE_13T_A_7.png"
                 ]
             },
             {
@@ -2508,13 +2508,13 @@
                     "Защита от радиации": 480
                 },
                 "images": [
-                    "images/gear/combat /CPE_13T/CPE_13T_B/CPE_13T_B_1.png",
-                    "images/gear/combat /CPE_13T/CPE_13T_B/CPE_13T_B_2.png",
-                    "images/gear/combat /CPE_13T/CPE_13T_B/CPE_13T_B_3.png",
-                    "images/gear/combat /CPE_13T/CPE_13T_B/CPE_13T_B_4.png",
-                    "images/gear/combat /CPE_13T/CPE_13T_B/CPE_13T_B_5.png",
-                    "images/gear/combat /CPE_13T/CPE_13T_B/CPE_13T_B_6.png",
-                    "images/gear/combat /CPE_13T/CPE_13T_B/CPE_13T_B_7.png"
+                    "images/gear/combat/CPE_13T/CPE_13T_B/CPE_13T_B_1.png",
+                    "images/gear/combat/CPE_13T/CPE_13T_B/CPE_13T_B_2.png",
+                    "images/gear/combat/CPE_13T/CPE_13T_B/CPE_13T_B_3.png",
+                    "images/gear/combat/CPE_13T/CPE_13T_B/CPE_13T_B_4.png",
+                    "images/gear/combat/CPE_13T/CPE_13T_B/CPE_13T_B_5.png",
+                    "images/gear/combat/CPE_13T/CPE_13T_B/CPE_13T_B_6.png",
+                    "images/gear/combat/CPE_13T/CPE_13T_B/CPE_13T_B_7.png"
                 ]
             }
         ]
@@ -2603,10 +2603,10 @@
                     "Защита от радиации": 480
                 },
                 "images": [
-                    "images/gear/combat /OZS_9D/OZS_9D_1.png",
-                    "images/gear/combat /OZS_9D/OZS_9D_2.png",
-                    "images/gear/combat /OZS_9D/OZS_9D_3.png",
-                    "images/gear/combat /OZS_9D/OZS_9D_4.png"
+                    "images/gear/combat/OZS_9D/OZS_9D_1.png",
+                    "images/gear/combat/OZS_9D/OZS_9D_2.png",
+                    "images/gear/combat/OZS_9D/OZS_9D_3.png",
+                    "images/gear/combat/OZS_9D/OZS_9D_4.png"
                 ]
             }
         ]
@@ -2695,8 +2695,8 @@
                     "Защита от радиации": 315
                 },
                 "images": [
-                    "images/gear/combat /OZS_9P/OZS_9P_1.png",
-                    "images/gear/combat /OZS_9P/OZS_9P_2.png"
+                    "images/gear/combat/OZS_9P/OZS_9P_1.png",
+                    "images/gear/combat/OZS_9P/OZS_9P_2.png"
                 ]
             }
         ]
@@ -2785,9 +2785,9 @@
                     "Защита от радиации": 480
                 },
                 "images": [
-                    "images/gear/combat /OZS_12P/OZS_12P_1.png",
-                    "images/gear/combat /OZS_12P/OZS_12P_2.png",
-                    "images/gear/combat /OZS_12P/OZS_12P_3.png"
+                    "images/gear/combat/OZS_12P/OZS_12P_1.png",
+                    "images/gear/combat/OZS_12P/OZS_12P_2.png",
+                    "images/gear/combat/OZS_12P/OZS_12P_3.png"
                 ]
             }
         ]
@@ -2876,12 +2876,12 @@
                     "Защита от радиации": 430
                 },
                 "images": [
-                    "images/gear/combat /Recryt/Recryt_1.png",
-                    "images/gear/combat /Recryt/Recryt_2.png",
-                    "images/gear/combat /Recryt/Recryt_3.png",
-                    "images/gear/combat /Recryt/Recryt_4.png",
-                    "images/gear/combat /Recryt/Recryt_5.png",
-                    "images/gear/combat /Recryt/Recryt_6.png"
+                    "images/gear/combat/Recryt/Recryt_1.png",
+                    "images/gear/combat/Recryt/Recryt_2.png",
+                    "images/gear/combat/Recryt/Recryt_3.png",
+                    "images/gear/combat/Recryt/Recryt_4.png",
+                    "images/gear/combat/Recryt/Recryt_5.png",
+                    "images/gear/combat/Recryt/Recryt_6.png"
                 ]
             }
         ]
@@ -2970,10 +2970,10 @@
                     "Защита от радиации": 430
                 },
                 "images": [
-                    "images/gear/combat /RYTIL_6D/RYTIL_6D_1.png",
-                    "images/gear/combat /RYTIL_6D/RYTIL_6D_2.png",
-                    "images/gear/combat /RYTIL_6D/RYTIL_6D_3.png",
-                    "images/gear/combat /RYTIL_6D/RYTIL_6D_4.png"
+                    "images/gear/combat/RYTIL_6D/RYTIL_6D_1.png",
+                    "images/gear/combat/RYTIL_6D/RYTIL_6D_2.png",
+                    "images/gear/combat/RYTIL_6D/RYTIL_6D_3.png",
+                    "images/gear/combat/RYTIL_6D/RYTIL_6D_4.png"
                 ]
             }
         ]
@@ -3062,8 +3062,8 @@
                     "Защита от радиации": 430
                 },
                 "images": [
-                    "images/gear/combat /OZS_20/OZS_20_1.png",
-                    "images/gear/combat /OZS_20/OZS_20_2.png"
+                    "images/gear/combat/OZS_20/OZS_20_1.png",
+                    "images/gear/combat/OZS_20/OZS_20_2.png"
                 ]
             }
         ]
