@@ -7,7 +7,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const detailVideoSource = document.getElementById("anomaly-video-source");
     const detailDescription = document.getElementById("anomaly-description");
 
-    // Загружаем JSON с реальными путями
+    // Функция для замены маркера [BOLT] на тултип с вопросиком
+    function replaceBoltMarker(text) {
+        const tooltipHTML = `<span class="tooltip-wrapper">
+            <span class="tooltip-icon">❓</span>
+            <span class="tooltip-text">Болт можно получить зажав клавишу R, предварительно уберите все из рук.</span>
+        </span>`;
+        return text.replace(/\[BOLT\]/gi, tooltipHTML);
+    }
+
+    // Загружаем JSON с аномалиями
     fetch("data/anomalies.json")
         .then(res => {
             if (!res.ok) throw new Error("Не удалось загрузить JSON");
@@ -19,22 +28,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 li.textContent = anomaly.name;
 
                 li.addEventListener("click", () => {
-                    // Снимаем активный класс
+                    // Снимаем активный класс со всех элементов
                     document.querySelectorAll(".anomaly-list li")
                         .forEach(el => el.classList.remove("active"));
                     li.classList.add("active");
 
-                    // Заголовок и описание
+                    // Заголовок
                     detailName.textContent = anomaly.name;
-                    detailDescription.textContent = anomaly.description;
 
-                    // Скрываем оба элемента перед отображением
+                    // Подставляем описание с тултипами
+                    detailDescription.innerHTML = replaceBoltMarker(anomaly.description);
+
+                    // Скрываем изображение и видео перед отображением
                     detailImage.style.display = "none";
                     detailVideo.style.display = "none";
 
                     // Если есть видео
                     if (anomaly.video) {
-                        // Автоматически заменяем "image/" на "images/", если нужно
                         let videoPath = anomaly.video.replace(/^image\//, "images/");
                         detailVideoSource.src = videoPath;
                         detailVideo.load();
@@ -42,9 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         return;
                     }
 
-                    // Если есть фото
+                    // Если есть изображение
                     if (anomaly.image) {
-                        // Автоматически заменяем "image/" на "images/", если нужно
                         let imagePath = anomaly.image.replace(/^image\//, "images/");
                         detailImage.src = imagePath;
                         detailImage.alt = anomaly.name;
@@ -56,4 +65,20 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         })
         .catch(err => console.error("Ошибка загрузки JSON:", err));
+
+    // Делегируем клик на вопросик внутри описания
+    detailDescription.addEventListener("click", (e) => {
+        if (e.target.classList.contains("tooltip-icon")) {
+            e.stopPropagation(); // клик не уйдет на document
+            const wrapper = e.target.parentElement;
+            wrapper.classList.toggle("active");
+        }
+    });
+
+    // Закрываем все тултипы при клике вне
+    document.addEventListener("click", () => {
+        document.querySelectorAll(".tooltip-wrapper.active").forEach(el => {
+            el.classList.remove("active");
+        });
+    });
 });
