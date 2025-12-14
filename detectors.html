@@ -2,32 +2,31 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Артефакты — GroteskStalker PvE</title>
+    <title>Детекторы — GroteskStalker PvE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Шрифт -->
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
-    <!-- Стили -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/artefacts.css">
+    <link rel="stylesheet" href="css/furniture.css"> <!-- используем тот же стиль, без цены -->
 
-    <!-- Скрипты -->
     <script src="js/nav.js" defer></script>
-    <script src="js/artefacts.js" defer></script>
+    <script src="js/detectors.js" defer></script>
 </head>
 <body>
 
 <header>
-    <h1>Артефакты</h1>
+    <h1>Детекторы</h1>
 </header>
 
 <nav>
     <ul class="tabs">
+
         <li><a href="index.html">Главная</a></li>
-            <li class="dropdown">
-                <a href="#">Информация</a>
+
+        <li class="dropdown">
+            <a href="#">Информация</a>
                 <ul class="dropdown-content">
                     <li><a href="rules.html">Правила</a></li>
                     <li><a href="calibers.html">Калибры</a></li>
@@ -48,25 +47,17 @@
                 <ul class="dropdown-content">
                     <li><a href="gear.html">Снаряжение</a></li>
                     <li><a href="knives.html">Ножи</a></li>
-                <li><a href="artefacts.html" class="active">Артефакты</a></li>
-                <li><a href="furniture.html">Фурнитура</a></li>
-                <li><a href="detectors.html">Детекторы</a></li>
+                    <li><a href="artefacts.html">Артефакты</a></li>
+                    <li><a href="furniture.html">Фурнитура</a></li>
+                <li><a href="detectors.html" class="active">Детекторы</a></li>
             </ul>
         </li>
     </ul>
 </nav>
 
 <main>
-    <div class="artefact-grid" id="artefactGrid"></div>
+    <div class="furniture-grid" id="detectorGrid"></div>
 </main>
-
-<!-- Модальное окно -->
-<div class="modal-overlay" id="modalOverlay">
-    <div class="modal-window" id="modalWindow">
-        <button class="modal-close" id="modalClose">✕</button>
-        <div id="modalContent"></div>
-    </div>
-</div>
 
 </body>
 </html>
