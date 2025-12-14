@@ -1,0 +1,64 @@
+.furniture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Карточка фурнитуры */
+.furniture-card {
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+
+    border: 2px solid #3a3a3a;
+
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* Наведение */
+.furniture-card:hover {
+    transform: translateY(-4px);
+    border-color: #ffb000;
+    box-shadow:
+        0 0 10px rgba(255,176,0,0.4),
+        0 0 20px rgba(255,176,0,0.25);
+}
+
+/* Фото */
+.furniture-card img {
+    max-width: 100%;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 6px rgba(0,0,0,0.6));
+}
+
+/* Название */
+.furniture-card h3 {
+    color: #ffb000;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+/* Описание */
+.furniture-card .description {
+    font-size: 13px;
+    color: #cfcfcf;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    min-height: 36px; /* чтобы карточки были ровные */
+}
+
+/* Цена */
+.furniture-card .price {
+    color: #ffb000;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 4px;
+}
