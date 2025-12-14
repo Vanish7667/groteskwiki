@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function replaceBoltMarker(text) {
         const tooltipHTML = `<span class="tooltip-wrapper">
             <span class="tooltip-icon">❓</span>
-            <span class="tooltip-text">Болт можно получить зажав клавишу R, предварительно уберите все из рук.</span>
+            <span class="tooltip-text">Болт можно получить зажав клавишу X, предварительно уберите все из рук.</span>
         </span>`;
         return text.replace(/\[BOLT\]/gi, tooltipHTML);
     }
