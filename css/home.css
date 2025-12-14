@@ -96,3 +96,54 @@ main#content {
 .footer-button:hover {
     background-color: #ffaa00;
 }
+
+/* ===== ФИКС ПРОКРУТКИ ОБНОВЛЕНИЙ ===== */
+
+/* Базовая высота */
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+/* Основной layout */
+.container {
+    display: flex;
+    height: calc(100vh - 260px); /* header + nav */
+}
+
+/* Оба сайдбара */
+.sidebar {
+    flex-shrink: 0;
+}
+
+/* Сайдбар обновлений */
+.sidebar-updates {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Список обновлений со скроллом */
+#updatesList {
+    flex: 1;
+    overflow-y: auto;
+    margin: 0;
+    padding-right: 6px;
+}
+
+/* (необязательно) красивый скролл */
+#updatesList::-webkit-scrollbar {
+    width: 6px;
+}
+
+#updatesList::-webkit-scrollbar-track {
+    background: #111;
+}
+
+#updatesList::-webkit-scrollbar-thumb {
+    background: #ffb000;
+    border-radius: 4px;
+}

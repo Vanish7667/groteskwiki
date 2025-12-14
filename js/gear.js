@@ -1,203 +1,252 @@
 document.addEventListener("DOMContentLoaded", () => {
   const jsonFiles = {
-    "Скрытная": "data/gear/Secretive.json",
-    "Научная": "data/gear/Scientific.json",
-    "Боевая": "data/gear/Combat.json"
+    "Combat": "data/gear/Combat.json",
+    "Scientific": "data/gear/Scientific.json",
+    "Secretive": "data/gear/Secretive.json"
   };
 
-  const categoriesEl = document.getElementById("categories-list");
-  const kitsListEl = document.getElementById("kits-list");
-  const kitTitleEl = document.getElementById("kit-title");
-  const variantButtonsEl = document.getElementById("variant-buttons");
-  const kitViewEl = document.getElementById("kit-view");
-  const mainImageEl = document.getElementById("main-image");
-  const imgPrevBtn = document.getElementById("img-prev");
-  const imgNextBtn = document.getElementById("img-next");
-  const kitDescEl = document.getElementById("kit-desc");
-  const kitStatsEl = document.getElementById("kit-stats");
-  const slotsContainerEl = document.getElementById("slots-container");
+  const categoryNames = {
+    "Combat": "Боевой",
+    "Scientific": "Научный",
+    "Secretive": "Скрытный",
+    "all": "Все"
+  };
+
+  const kitsGrid = document.getElementById("kits-grid");
+  const categoryBtns = document.querySelectorAll(".category-btn");
+  const modal = document.getElementById("kitModal");
+  const modalClose = document.getElementById("modalClose");
+  const modalKitName = document.getElementById("modalKitName");
+  const modalKitCategory = document.getElementById("modalKitCategory");
+  const modalRanks = document.getElementById("modalRankButtons");
+  const modalMainImage = document.getElementById("modalMainImage");
+  const modalDesc = document.getElementById("modalDesc");
+  const modalStats = document.getElementById("modalStats");
+  const modalSlots = document.getElementById("modalSlots");
 
   let allKits = {};
-  let currentCategory = null;
+  let currentCategory = "all";
   let currentKit = null;
   let currentVariant = null;
   let currentImageIndex = 0;
 
-  function populateCategories() {
-    categoriesEl.innerHTML = "";
-    Object.keys(jsonFiles).forEach(cat => {
-      const btn = document.createElement("button");
-      btn.textContent = cat;
-      btn.className = "category-btn";
-      btn.addEventListener("click", () => {
-        Array.from(categoriesEl.children).forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        selectCategory(cat);
-      });
-      categoriesEl.appendChild(btn);
+  // Tooltip для слотов
+  const slotTooltip = document.createElement("div");
+  slotTooltip.className = "slot-tooltip";
+  document.body.appendChild(slotTooltip);
+  Object.assign(slotTooltip.style, {
+    position: "absolute",
+    display: "none",
+    background: "rgba(0,0,0,0.9)",
+    color: "#fff",
+    padding: "6px 10px",
+    borderRadius: "6px",
+    fontSize: "14px",
+    pointerEvents: "none",
+    zIndex: "10000",
+    maxWidth: "220px",
+    textAlign: "center",
+  });
+
+  function showSlotTooltip(target, text) {
+    slotTooltip.textContent = text;
+    const rect = target.getBoundingClientRect();
+    slotTooltip.style.top = (window.scrollY + rect.top - slotTooltip.offsetHeight - 6) + "px";
+    slotTooltip.style.left = (window.scrollX + rect.left + rect.width / 2 - slotTooltip.offsetWidth / 2) + "px";
+    slotTooltip.style.display = "block";
+  }
+
+  function hideSlotTooltip() {
+    slotTooltip.style.display = "none";
+  }
+
+  // Категории
+  categoryBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      categoryBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      currentCategory = btn.dataset.cat;
+      renderKits();
     });
-    categoriesEl.firstChild.classList.add("active");
-    selectCategory(Object.keys(jsonFiles)[0]);
+  });
+
+  function loadAllKits() {
+    const promises = Object.entries(jsonFiles).map(([cat, file]) =>
+      fetch(file)
+        .then(r => r.json())
+        .then(data => allKits[cat] = data)
+        .catch(err => console.error(`Ошибка загрузки ${file}:`, err))
+    );
+    Promise.all(promises).then(renderKits);
   }
 
-  function selectCategory(cat) {
-    currentCategory = cat;
-    kitsListEl.innerHTML = "<p>Загрузка...</p>";
-    fetch(jsonFiles[cat])
-      .then(r => r.json())
-      .then(data => {
-        allKits[cat] = data.map(k => ({ name: k.name, variants: k.variants || [] }));
-        populateKitsList(cat);
-        if (allKits[cat].length > 0) selectKitByIndex(0);
-      })
-      .catch(err => {
-        kitsListEl.innerHTML = "<p>Ошибка загрузки данных.</p>";
-        console.error(err);
+  function renderKits() {
+    kitsGrid.innerHTML = "";
+    Object.entries(allKits).forEach(([cat, kits]) => {
+      if (currentCategory !== "all" && currentCategory !== cat) return;
+      kits.forEach(kit => {
+        const card = document.createElement("div");
+        card.className = "kit-card";
+        card.innerHTML = `
+          <img src="${kit.variants?.[0]?.images?.[0] || ''}" alt="${kit.name}">
+          <h3>${kit.name}</h3>`;
+        card.addEventListener("click", () => openModal(kit, cat));
+        kitsGrid.appendChild(card);
       });
-  }
-
-  function populateKitsList(cat) {
-    kitsListEl.innerHTML = "";
-    (allKits[cat] || []).forEach((kit, i) => {
-      const btn = document.createElement("button");
-      btn.textContent = kit.name;
-      btn.className = "kit-btn";
-      btn.addEventListener("click", () => {
-        Array.from(kitsListEl.querySelectorAll(".kit-btn")).forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        selectKitByIndex(i);
-      });
-      kitsListEl.appendChild(btn);
     });
   }
 
-  function selectKitByIndex(index) {
-    currentKit = allKits[currentCategory][index];
-    if (!currentKit) return;
-    kitTitleEl.textContent = currentKit.name;
-    renderVariantButtons(currentKit);
-    if (currentKit.variants.length > 0) selectVariant(currentKit.variants[0]);
-    else { kitViewEl.classList.add("hidden"); variantButtonsEl.innerHTML = ""; }
-  }
-
-  function renderVariantButtons(kit) {
-    variantButtonsEl.innerHTML = "";
-    kit.variants.forEach((v, idx) => {
-      const btn = document.createElement("button");
-      btn.className = "variant-button";
-      btn.textContent = v.rank || `Вариант ${idx+1}`;
-      btn.addEventListener("click", () => {
-        Array.from(variantButtonsEl.children).forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        selectVariant(v);
-      });
-      variantButtonsEl.appendChild(btn);
-    });
-    if (variantButtonsEl.firstChild) variantButtonsEl.firstChild.classList.add("active");
-    variantButtonsEl.setAttribute("aria-hidden", "false");
-  }
-
-  function selectVariant(variant) {
-    currentVariant = variant;
+  function openModal(kit, cat) {
+    currentKit = kit;
+    modalKitName.textContent = kit.name;
+    modalKitCategory.textContent = categoryNames[cat] || cat;
+    modalRanks.innerHTML = "";
+    modalSlots.innerHTML = "";
+    hideSlotTooltip();
     currentImageIndex = 0;
-    kitViewEl.classList.remove("hidden");
-    updateMainImage();
-    kitDescEl.innerHTML = variant.description ? `<p>${variant.description}</p>` : "";
-    kitStatsEl.innerHTML = "<h3>Характеристики:</h3>";
+
+    kit.variants?.forEach((v, idx) => {
+      const btn = document.createElement("button");
+      btn.textContent = v.rank || `Вариант ${idx+1}`;
+      btn.addEventListener("click", () => selectVariant(v));
+      modalRanks.appendChild(btn);
+      if(idx===0) btn.classList.add("active");
+    });
+
+    if(kit.variants?.[0]) selectVariant(kit.variants[0]);
+    modal.classList.remove("hidden");
+  }
+
+  function selectVariant(v) {
+    currentVariant = v;
+
+    // Активная кнопка ранга
+    Array.from(modalRanks.children).forEach(b => b.classList.remove("active"));
+    const activeBtn = Array.from(modalRanks.children).find(
+      b => b.textContent.trim() === (v.rank || 'Вариант 1')
+    );
+    if (activeBtn) activeBtn.classList.add("active");
+
+    // Основное изображение и описание
+    modalMainImage.src = v.images?.[0] || "";
+    modalDesc.innerHTML = v.description ? `<h3>Описание:</h3><p>${v.description}</p>` : "";
+
+    // Характеристики
+    modalStats.innerHTML = "<h3>Характеристики:</h3>";
     const ul = document.createElement("ul");
-    Object.entries(variant.stats || {}).forEach(([k,v]) => {
+    Object.entries(v.stats||{}).forEach(([k,val])=>{
       const li = document.createElement("li");
-      li.textContent = `${k}: ${v}`;
+      li.textContent = `${k}: ${val}`;
       ul.appendChild(li);
     });
-    kitStatsEl.appendChild(ul);
+    modalStats.appendChild(ul);
 
-    slotsContainerEl.innerHTML = "";
-    (variant.slots || []).forEach(slot => {
-      Object.keys(slot).filter(k => k !== "description" && k !== "images").forEach(key => {
-        if (slot[key] === 1) {
-          const wrap = document.createElement("div");
-          wrap.className = "slot-circle";
-          const img = document.createElement("img");
-          img.src = slot.images?.[0] || "";
-          img.alt = key;
-          img.title = slot.description || key;
+    // Слоты
+    modalSlots.innerHTML = "";
+    hideSlotTooltip();
+    (v.slots||[]).forEach(slot=>{
+      Object.keys(slot).filter(k=>k!=="description"&&k!=="images").forEach(key=>{
+        if(slot[key]===1){
+          const wrap=document.createElement("div");
+          wrap.className="slot-circle";
+          const img=document.createElement("img");
+          img.src=slot.images?.[0]||"";
+          img.alt=key;
+          img.title="";
           wrap.appendChild(img);
-          slotsContainerEl.appendChild(wrap);
+
+          // Tooltip при клике
+          wrap.addEventListener("click", (e)=>{
+            e.stopPropagation();
+            if(slotTooltip.style.display==="block") hideSlotTooltip();
+            else showSlotTooltip(wrap, slot.description || key);
+          });
+
+          modalSlots.appendChild(wrap);
         }
       });
     });
+
+    // Создание навигации по фото под картинкой
+    let navContainer = document.getElementById("modalImgNavContainer");
+    if(!navContainer) {
+      navContainer = document.createElement("div");
+      navContainer.id = "modalImgNavContainer";
+      navContainer.className = "modal-img-nav-container";
+      modalMainImage.parentNode.appendChild(navContainer);
+    }
+    navContainer.innerHTML = "";
+
+    const imgPrevBtn = document.createElement("button");
+    const imgNextBtn = document.createElement("button");
+    imgPrevBtn.textContent = "‹";
+    imgNextBtn.textContent = "›";
+    imgPrevBtn.className = imgNextBtn.className = "modal-img-nav";
+
+    navContainer.appendChild(imgPrevBtn);
+    navContainer.appendChild(imgNextBtn);
+
+    imgPrevBtn.addEventListener("click", e => {
+      e.stopPropagation();
+      if(!currentVariant?.images?.length) return;
+      currentImageIndex--;
+      if(currentImageIndex < 0) currentImageIndex = currentVariant.images.length - 1;
+      updateMainImage();
+    });
+
+    imgNextBtn.addEventListener("click", e => {
+      e.stopPropagation();
+      if(!currentVariant?.images?.length) return;
+      currentImageIndex++;
+      if(currentImageIndex >= currentVariant.images.length) currentImageIndex = 0;
+      updateMainImage();
+    });
+
+    updateMainImage();
   }
 
   function updateMainImage() {
-    if (!currentVariant?.images?.length) {
-      mainImageEl.src = "";
-      mainImageEl.alt = "";
-      imgPrevBtn.style.visibility = "hidden";
-      imgNextBtn.style.visibility = "hidden";
+    if(!currentVariant?.images?.length) {
+      modalMainImage.src = "";
       return;
     }
-    const imgs = currentVariant.images;
-    if (currentImageIndex < 0) currentImageIndex = imgs.length - 1;
-    if (currentImageIndex >= imgs.length) currentImageIndex = 0;
-    mainImageEl.src = imgs[currentImageIndex];
-    mainImageEl.alt = `${currentKit.name} — ${currentVariant.rank} (${currentImageIndex+1}/${imgs.length})`;
-    imgPrevBtn.style.visibility = imgs.length > 1 ? "visible" : "hidden";
-    imgNextBtn.style.visibility = imgs.length > 1 ? "visible" : "hidden";
+    if(currentImageIndex < 0) currentImageIndex = currentVariant.images.length - 1;
+    if(currentImageIndex >= currentVariant.images.length) currentImageIndex = 0;
+    modalMainImage.src = currentVariant.images[currentImageIndex];
   }
 
-  imgPrevBtn.addEventListener("click", () => { currentImageIndex--; updateMainImage(); });
-  imgNextBtn.addEventListener("click", () => { currentImageIndex++; updateMainImage(); });
+  // Закрытие модального окна
+  modalClose.addEventListener("click", ()=> modal.classList.add("hidden"));
+  modal.addEventListener("click", e=> { if(e.target===modal) modal.classList.add("hidden"); });
 
-  // Открытие изображения с масштабированием колесиком
-  mainImageEl.addEventListener("click", () => {
-    const src = currentVariant?.images?.[currentImageIndex];
-    if (!src) return;
+  // Закрытие тултипа при клике в любом месте
+  document.addEventListener("click", hideSlotTooltip);
 
+  // Клик на фото - полноэкран
+  modalMainImage.addEventListener("click", ()=>{
+    const src = modalMainImage.src;
+    if(!src) return;
     const overlay = document.createElement("div");
-    Object.assign(overlay.style, {
-      position:"fixed",
-      top:"0",
-      left:"0",
-      width:"100%",
-      height:"100%",
-      backgroundColor:"rgba(0,0,0,0.92)",
-      display:"flex",
-      alignItems:"center",
-      justifyContent:"center",
-      zIndex:9999,
-      cursor:"zoom-out",
-      overflow:"hidden"
+    Object.assign(overlay.style,{
+      position:"fixed",top:"0",left:"0",width:"100%",height:"100%",
+      backgroundColor:"rgba(0,0,0,0.92)",display:"flex",
+      alignItems:"center",justifyContent:"center",zIndex:9999,
+      cursor:"zoom-out",overflow:"hidden"
     });
-
     const img = document.createElement("img");
-    img.src = src;
-    Object.assign(img.style, {
-      maxWidth:"94%",
-      maxHeight:"94%",
-      borderRadius:"8px",
-      transform: "scale(1)",
-      transition: "transform 0.1s"
-    });
-
-    let scale = 1;
-
-    // Масштабирование колесиком
-    overlay.addEventListener("wheel", (e) => {
+    img.src=src;
+    Object.assign(img.style,{maxWidth:"94%",maxHeight:"94%",borderRadius:"8px",transform:"scale(1)",transition:"transform 0.1s"});
+    let scale=1;
+    overlay.addEventListener("wheel", e=>{
       e.preventDefault();
-      if(e.deltaY < 0) scale *= 1.1;
-      else scale /= 1.1;
-
-      if(scale < 0.2) scale = 0.2;
-      if(scale > 5) scale = 5;
-
-      img.style.transform = `scale(${scale})`;
+      scale *= e.deltaY<0?1.1:0.9;
+      scale=Math.min(Math.max(scale,0.2),5);
+      img.style.transform=`scale(${scale})`;
     });
-
     overlay.appendChild(img);
     overlay.addEventListener("click",()=>overlay.remove());
     document.body.appendChild(overlay);
   });
 
-  populateCategories();
+  loadAllKits();
 });
