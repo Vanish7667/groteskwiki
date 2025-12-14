@@ -1,35 +1,47 @@
-const list = document.getElementById("knifeList");
-const view = document.getElementById("knifeView");
+const grid = document.getElementById("knifeGrid");
+const overlay = document.getElementById("modalOverlay");
+const modalWindow = document.getElementById("modalWindow");
+const modalClose = document.getElementById("modalClose");
+const modalImage = document.getElementById("modalImage");
+const modalTitle = document.getElementById("modalTitle");
+const modalDesc = document.getElementById("modalDesc");
 
 fetch("data/knives.json")
     .then(res => res.json())
     .then(knives => {
+        knives.forEach(knife => {
+            const card = document.createElement("div");
+            card.className = "furniture-card"; // карточки фурнитуры
 
-        knives.forEach((knife, index) => {
-            const item = document.createElement("div");
-            item.className = "knife-item";
-            item.textContent = knife.name;
+            card.innerHTML = `
+                <img src="${knife.image}" alt="${knife.name}">
+                <h3>${knife.name}</h3>
+                <p class="description">${knife.description}</p>
+            `;
 
-            item.addEventListener("click", () => {
-                document.querySelectorAll(".knife-item")
-                    .forEach(el => el.classList.remove("active"));
-
-                item.classList.add("active");
-
-                view.innerHTML = `
-                    <h2 class="knife-title">${knife.name}</h2>
-                    <img src="${knife.image}" alt="${knife.name}">
-                    <div class="knife-desc">${knife.description}</div>
-                `;
+            // Открытие модального окна по клику на картинку
+            card.querySelector("img").addEventListener("click", () => {
+                modalImage.src = knife.image;
+                modalTitle.textContent = knife.name;
+                modalDesc.textContent = knife.description;
+                overlay.classList.add("active");
+                document.body.style.overflow = "hidden";
             });
 
-            list.appendChild(item);
-
-            if (index === 0) item.click();
+            grid.appendChild(card);
         });
-
     })
-    .catch(err => {
-        view.innerHTML = "<p>Ошибка загрузки данных</p>";
-        console.error(err);
-    });
+    .catch(err => console.error("Ошибка загрузки ножей:", err));
+
+// Закрытие модалки
+modalClose.addEventListener("click", () => {
+    overlay.classList.remove("active");
+    document.body.style.overflow = "";
+});
+
+overlay.addEventListener("click", e => {
+    if (e.target === overlay) {
+        overlay.classList.remove("active");
+        document.body.style.overflow = "";
+    }
+});

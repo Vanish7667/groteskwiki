@@ -3,20 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Ножи — GroteskStalker PvE</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Шрифт -->
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
-    <!-- Общие стили -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/furniture.css"> <!-- Используем стили карточек фурнитуры -->
 
-    <!-- Стили страницы ножей -->
-    <link rel="stylesheet" href="css/knives.css">
-
-    <!-- Скрипты -->
     <script src="js/nav.js" defer></script>
     <script src="js/knives.js" defer></script>
 </head>
@@ -41,7 +35,6 @@
             </ul>
         </li>
 
-        <!-- Раздел Инструменты -->
         <li class="dropdown">
             <a href="#">Инструменты</a>
             <ul class="dropdown-content">
@@ -50,7 +43,6 @@
             </ul>
         </li>
 
-        <!-- Раздел Предметы -->
         <li class="dropdown">
             <a href="#">Предметы</a>
             <ul class="dropdown-content">
@@ -65,18 +57,18 @@
 </nav>
 
 <main>
-    <div class="knives-container">
-
-        <!-- ЛЕВАЯ ПАНЕЛЬ -->
-        <aside class="knife-list" id="knifeList"></aside>
-
-        <!-- ПРАВАЯ ПАНЕЛЬ -->
-        <section class="knife-view" id="knifeView">
-            <p class="placeholder">Выберите нож</p>
-        </section>
-
-    </div>
+    <div class="furniture-grid" id="knifeGrid"></div>
 </main>
+
+<!-- Модальное окно для увеличенного фото -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal-window" id="modalWindow">
+        <button class="modal-close" id="modalClose">✕</button>
+        <img id="modalImage" src="" alt="">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+    </div>
+</div>
 
 </body>
 </html>
