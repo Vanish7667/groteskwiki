@@ -63,6 +63,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 listContainer.appendChild(li);
             });
+
+            // ✅ Автоклик по первой аномалии при загрузке страницы
+            const firstLi = listContainer.querySelector("li");
+            if (firstLi) firstLi.click();
         })
         .catch(err => console.error("Ошибка загрузки JSON:", err));
 

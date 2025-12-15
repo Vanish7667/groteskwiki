@@ -1,10 +1,11 @@
 .rank-container {
-    max-width: 1200px;
-    margin: 30px auto;
+    max-width: 1400px;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
     padding: 10px;
+    min-height: 685px;       /* минимальная высота */
 }
 
 .rank-card {
@@ -34,4 +35,22 @@
 .rank-card .role {
     color: var(--clr);
     font-weight: bold;
+}
+
+/* Футер фулл копия главной */
+.footer-button:hover {
+    background-color: #ffaa00;
+}
+
+/* Кнопка Discord */
+.footer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffb000;
+    color: #111111;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: 0.3s;
 }

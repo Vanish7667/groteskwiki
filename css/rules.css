@@ -1,6 +1,6 @@
 .rules-container {
     max-width: 1200px;
-    margin: 30px auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #2a2a2a;
     border-radius: 8px;
@@ -79,4 +79,22 @@ footer a.rule-link {
 .rules-list li a.rule-link:hover,
 footer a.rule-link:hover {
     color: #ffb000; /* подсветка при наведении */
+}
+
+/* Футер фулл копия главной */
+.footer-button:hover {
+    background-color: #ffaa00;
+}
+
+/* Кнопка Discord */
+.footer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffb000;
+    color: #111111;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: 0.3s;
 }

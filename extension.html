@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Расширение личного ящика — GroteskStalker PvE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/extension.css">
+    <link rel="stylesheet" href="css/garland.css">
+
+    <script src="js/nav.js" defer></script>
+    <script src="js/extension.js" defer></script>
+</head>
+<body>
+
+    <!--гирлянда -->
+<div class="garland">
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<header>
+    <h1>Расширение личного ящика</h1>
+</header>
+
+<nav>
+    <ul class="tabs">
+        <li><a href="index.html">Главная</a></li>
+        <li class="dropdown">
+            <a href="#">Информация</a>
+            <ul class="dropdown-content">
+                <li><a href="rules.html">Правила</a></li>
+                <li><a href="calibers.html">Калибры</a></li>
+                <li><a href="rank.html">Ранг</a></li>
+                <li><a href="anomalies.html">Аномалии</a></li>
+                <li><a href="rent.html">Аренда дома</a></li>
+                <li><a href="extension.html" class="active">Расширение ящика</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">Инструменты</a>
+            <ul class="dropdown-content">
+                <li><a href="artifact_calc.html">Калькулятор артефактов</a></li>
+                <li><a href="map.html">Карта</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">Предметы</a>
+            <ul class="dropdown-content">
+                <li><a href="gear.html">Одежда</a></li>
+                <li><a href="knives.html">Ножи</a></li>
+                <li><a href="artefacts.html">Артефакты</a></li>
+                <li><a href="furniture.html">Фурнитура</a></li>
+                <li><a href="detectors.html">Детекторы</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<main class="rent-container">
+    <section class="rent-info">
+
+        <h2>Общая информация</h2>
+        <p>
+            Для расширения личного ящика Вам потребуются
+            <strong>золотые монетки</strong><span class="coin-tooltip-trigger">🪙</span>,
+            которые Вы можете добыть через голосование на
+            <a href="https://wargm.ru/server/68966/votes"
+               target="_blank"
+               class="wargm-link">
+                WarGM
+            </a>.
+        </p>
+
+        <!-- Блок с правилами и фото -->
+        <div class="mailbox-block">
+            <!-- Левый столбец: правила + расширение -->
+            <div class="mailbox-content">
+                <div class="rent-warning warning-soft-red">
+                    <h3>❗ ВАЖНО — ПРАВИЛА ИСПОЛЬЗОВАНИЯ</h3>
+                    <p>Каждое добавление страницы будет стоить <strong>ровно одну золотую монету.</strong><span class="coin-tooltip-trigger">🪙</span></p>
+                    <p>Используйте <strong>одну монету<span class="coin-tooltip-trigger">🪙</span> для улучшения,</strong> чтобы не пропали остальные. Если у Вас будет стак монет и Вы нажмете "Улучшить" - <strong>пропадут все и выдадут одно улучшение.</strong></p>
+                    <p><strong>Без отката</strong> - восстановления монет не будет.</p>
+                    <p class="muted">Максимально допустимое количество страниц — <strong>22</strong>.</p>
+                </div>
+
+                <h2>Расширение ящика будет проходить следующим образом:</h2>
+                <ul class="rent-rules">
+                    <li>Вы держите <strong>1 монету<span class="coin-tooltip-trigger">🪙</span></strong> у себя в инвентаре.</li>
+                    <li>Нажимаете кнопку <strong>"Улучшить"</strong>, в меню данного сундука.</li>
+                </ul>
+            </div>
+
+            <!-- Правый столбец: фото -->
+            <div class="mailbox-image">
+                <img src="/images/other/personal_mailbox/mailbox.png" alt="Личный ящик">
+                <span class="img-caption">Личный ящик</span>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2025 GroteskStalker PvE | 
+        <a href="https://discord.gg/P7NQfqMWRq" target="_blank" class="footer-button">Discord</a></p>
+    </footer>

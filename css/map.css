@@ -1,4 +1,4 @@
-/* Общие стили страницы */
+/* ====== ОСНОВНОЕ ====== */
 html, body {
     margin: 0;
     padding: 0;
@@ -6,66 +6,108 @@ html, body {
     font-family: 'Share Tech Mono', monospace;
     background-color: #111;
     color: #fff;
-    overflow: hidden; /* убираем скролл */
+    overflow: hidden;
 }
 
 header, nav, footer {
     text-align: center;
     background-color: #1c1c1c;
-    padding: 5px 10px;
-    color: #fff;
+    padding: 6px 10px;
 }
 
-/* MAIN - колонка с картой */
-.container, main {
-    height: 100%; /* колонка занимает всю высоту страницы */
-    width: 100%;
+/* ====== КОНТЕНТ ====== */
+.map-page {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    overflow: hidden; /* скрываем лишний контент */
 }
 
-/* Кнопки выбора карты */
+/* ====== КНОПКИ ====== */
 .map-buttons {
-    margin: 10px 0;
-    text-align: center;
+    margin-bottom: 10px;
 }
-.map-buttons button { 
-    padding: 6px 12px; 
-    margin: 0 5px; 
-    border-radius: 5px; 
-    background-color: #555; 
-    color:#f0f0f0; 
-    border:none; 
-    cursor:pointer; 
-    font-weight:bold;
+.map-buttons button {
+    padding: 6px 14px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #555;
+    color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
 }
-.map-buttons button:hover { 
-    background-color: #777; 
+.map-buttons button:hover {
+    background-color: #777;
 }
 
-/* Контейнер карты */
+/* ====== КАРТА ====== */
 .map-container {
+    width: 95%;
+    max-width: 1400px;
+    height: 720px;
     position: relative;
-    width: 900px;          
-    height: 600px; /* уменьшена высота */
-    margin: 0 auto 10px;
     overflow: hidden;
-    border: 4px solid #00ff00; /* видимая рамка */
+    border: 4px solid #ffb000;
     border-radius: 8px;
     background: #1e1e1e;
-    box-shadow: 0 0 10px rgba(0,255,0,0.5);
 }
 
-/* Canvas */
-canvas {
-    position: absolute;
-    left: 0;
-    top: 0;
+#mapCanvas {
     width: 100%;
     height: 100%;
-    background-color: #1e1e1e;
+    cursor: grab;
+}
+#mapCanvas:active {
+    cursor: grabbing;
+}
+
+/* ====== ПАНЕЛЬ РАДИАЦИИ ====== */
+#radiation-panel {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    background-color: rgba(30,30,30,0.95);
+    border: 2px solid #ffb000;
+    border-radius: 6px;
+    padding: 10px;
+    z-index: 10;
+    font-size: 13px;
+}
+
+#radiation-panel button {
+    background-color: #333;
+    border: 1px solid #ffb000;
+    border-radius: 4px;
+    color: #fff;
+    padding: 4px 6px;
+    cursor: pointer;
+}
+#radiation-panel button:hover {
+    background-color: #555;
+}
+
+#radiation-levels {
+    display: none;
+    margin-top: 5px;
+    gap: 3px;
+    flex-direction: column;
+}
+
+/* Футер фулл копия главной */
+.footer-button:hover {
+    background-color: #ffaa00;
+}
+
+/* Кнопка Discord */
+.footer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffb000;
+    color: #111111;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: 0.3s;
 }

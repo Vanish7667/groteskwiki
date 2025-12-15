@@ -1,22 +1,43 @@
+/* ======================= */
+/* Контейнер аномалий      */
+/* ======================= */
 .anomalies-container {
     display: flex;
-    max-width: 1200px;
-    margin: 30px auto;
+    max-width: 1400px;
+    margin: 20px auto 0 auto; /* убрали верхний margin или поставили 0 сверху */
     gap: 20px;
+
+    --container-height: 685px;
+    height: var(--container-height);
 }
 
-/* Список аномалий слева */
 .anomaly-list {
-    flex: 0 0 250px;
+    flex: 0 0 300px;
     background-color: #2b2b2b;
     border-left: 6px solid #ffb000;
     border-radius: 8px;
     padding: 15px;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Скрываем визуальный скролл, но оставляем прокрутку */
 .anomaly-list ul {
-    list-style: none;
-    padding: 0;
+    overflow-y: auto;
+
+    /* Firefox */
+    scrollbar-width: none;
+
+    /* IE / Edge */
+    -ms-overflow-style: none;
+}
+
+/* Chrome / Safari / Opera */
+.anomaly-list ul::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 .anomaly-list li {
@@ -35,34 +56,26 @@
     color: #111111;
 }
 
-/* Детальная карточка */
+/* ======================= */
+/* Детальная карточка       */
+/* ======================= */
 .anomaly-detail {
     flex: 1;
     background: #2b2b2b;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 12px rgba(0,0,0,0.5);
+    height: 100%;             /* растягивается на всю высоту контейнера */
+    overflow-y: auto;         /* если контента больше высоты */
 }
 
+/* Заголовок и контент */
 .anomaly-detail h2 {
     color: #ffb000;
     margin-bottom: 15px;
 }
 
-.anomaly-detail img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0 0 10px rgba(255,176,0,0.5);
-}
-
-.anomaly-detail p {
-    color: #ccc;
-    font-size: 15px;
-    line-height: 1.6;
-}
-
-#anomaly-image,
+.anomaly-detail img,
 #anomaly-video {
     max-width: 100%;
     border-radius: 8px;
@@ -70,6 +83,16 @@
     object-fit: cover;
 }
 
+/* Текст описания */
+.anomaly-detail p {
+    color: #ccc;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ======================= */
+/* Tooltip для болтов       */
+/* ======================= */
 .tooltip-wrapper {
     position: relative;
     display: inline-block;
@@ -107,6 +130,25 @@
     line-height: 1.4;
     border: 1px solid #555;
 }
+
 .tooltip-wrapper.active .tooltip-text {
     display: block;
+}
+
+/* Футер фулл копия главной */
+.footer-button:hover {
+    background-color: #ffaa00;
+}
+
+/* Кнопка Discord */
+.footer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffb000;
+    color: #111111;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: 0.3s;
 }
