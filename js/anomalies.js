@@ -1,3 +1,8 @@
+/*
+  Copyright (c) 2025 Vanish7667 and bartholomewlaw
+  All Rights Reserved
+*/
+
 document.addEventListener("DOMContentLoaded", () => {
     const listContainer = document.getElementById("anomalies-list");
 

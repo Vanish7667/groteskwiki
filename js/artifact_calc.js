@@ -1,3 +1,8 @@
+/*
+  Copyright (c) 2025 Vanish7667 and bartholomewlaw
+  All Rights Reserved
+*/
+
 let artifactActive = null;
 
 const artifactListEl = document.getElementById("artifact-list");

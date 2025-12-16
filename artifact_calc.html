@@ -8,66 +8,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калькулятор артефактов - GroteskStalker PvE Wiki</title>
-
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Основные css -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/artifact_calc.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/garland.css">
+    <!-- Компоненты css -->
+    <link rel="stylesheet" href="css/components/garland.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/nav.css">
 </head>
 <body>
-            <!--гирлянда -->
-<div class="garland">
-  <span></span><span></span><span></span><span></span><span></span>
-  <span></span><span></span><span></span><span></span><span></span>
-  <span></span><span></span><span></span><span></span><span></span>
-</div>
+    <!-- гирлянда -->
+    <div id="garland"></div>
 
     <header>
         <h1>Калькулятор Артефактов</h1>
     </header>
 
-    <nav>
-    <ul class="tabs">
-        <!-- Главная вкладка без выпадающего списка -->
-        <li>
-            <a href="index.html">Главная</a>
-        </li>
-
-        <!-- Раздел Информация -->
-        <li class="dropdown">
-            <a href="#">Информация</a>
-            <ul class="dropdown-content">
-                <li><a href="rules.html">Правила</a></li>
-                <li><a href="calibers.html">Калибры</a></li>
-                <li><a href="rank.html">Ранг</a></li>
-                <li><a href="anomalies.html">Аномалии</a></li>
-                <li><a href="rent.html">Аренда дома</a></li>
-                <li><a href="extension.html">Расширение ящика</a></li>
-            </ul>
-        </li>
-
-        <!-- Раздел Инструменты -->
-        <li class="dropdown">
-            <a href="#">Инструменты</a>
-            <ul class="dropdown-content">
-                <li><a href="artifact_calc.html">Калькулятор артефактов</a></li>
-            </ul>
-        </li>
-
-        <!-- Раздел Предметы -->
-        <li class="dropdown">
-            <a href="#">Предметы</a>
-            <ul class="dropdown-content">
-                <li><a href="gear.html">Одежда</a></li>
-                <li><a href="knives.html">Ножи</a></li>
-                <li><a href="artefacts.html">Артефакты</a></li>
-                <li><a href="furniture.html">Фурнитура</a></li>
-                <li><a href="detectors.html">Детекторы</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+    <!-- меню -->
+    <div id="nav"></div>
 
     <div class="container">
         <main id="content">
@@ -134,9 +94,8 @@
         </main>
     </div>
 
-    <footer>
-        <p>&copy; 2025 GroteskStalker PvE | <a href="https://discord.gg/P7NQfqMWRq" target="_blank" class="footer-button">Discord</a></p>
-    </footer>
+    <!-- футер -->
+    <div id="footer"></div>
 
     <!-- Модальное окно артефактов -->
     <div id="artifact-modal">
@@ -146,8 +105,10 @@
             <div id="artifact-list"></div>
         </div>
     </div>
-
+    
+    <!-- Компоненты js -->
+    <script src="/js/components/components.js"></script>
+    <!-- Основные js -->
     <script src="js/artifact_calc.js"></script>
-    <script src="js/nav.js"></script>
 </body>
 </html>

@@ -1,3 +1,8 @@
+/*
+  Copyright (c) 2025 Vanish7667 and bartholomewlaw
+  All Rights Reserved
+*/
+
 const grid = document.getElementById("detectorGrid");
 
 fetch("data/detectors/detectors.json")

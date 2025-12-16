@@ -1,3 +1,8 @@
+/*
+  Copyright (c) 2025 Vanish7667 and bartholomewlaw
+  All Rights Reserved
+*/
+
 const grid = document.getElementById("knifeGrid");
 const overlay = document.getElementById("modalOverlay");
 const modalWindow = document.getElementById("modalWindow");

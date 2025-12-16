@@ -10,60 +10,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-
+    <!-- Основные css -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/extension.css">
-    <link rel="stylesheet" href="css/garland.css">
-
-    <script src="js/nav.js" defer></script>
+    <!-- Основные js -->
     <script src="js/extension.js" defer></script>
+    <!-- Компоненты css -->
+    <link rel="stylesheet" href="css/components/garland.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/nav.css">
+    <!-- Компоненты js -->
+    <script src="/js/components/components.js"></script>
 </head>
 <body>
 
-    <!--гирлянда -->
-<div class="garland">
-  <span></span><span></span><span></span><span></span><span></span>
-  <span></span><span></span><span></span><span></span><span></span>
-  <span></span><span></span><span></span><span></span><span></span>
-</div>
+    <!-- гирлянда -->
+    <div id="garland"></div>
 
 <header>
     <h1>Расширение личного ящика</h1>
 </header>
 
-<nav>
-    <ul class="tabs">
-        <li><a href="index.html">Главная</a></li>
-        <li class="dropdown">
-            <a href="#">Информация</a>
-            <ul class="dropdown-content">
-                <li><a href="rules.html">Правила</a></li>
-                <li><a href="calibers.html">Калибры</a></li>
-                <li><a href="rank.html">Ранг</a></li>
-                <li><a href="anomalies.html">Аномалии</a></li>
-                <li><a href="rent.html">Аренда дома</a></li>
-                <li><a href="extension.html" class="active">Расширение ящика</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#">Инструменты</a>
-            <ul class="dropdown-content">
-                <li><a href="artifact_calc.html">Калькулятор артефактов</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#">Предметы</a>
-            <ul class="dropdown-content">
-                <li><a href="gear.html">Одежда</a></li>
-                <li><a href="knives.html">Ножи</a></li>
-                <li><a href="artefacts.html">Артефакты</a></li>
-                <li><a href="furniture.html">Фурнитура</a></li>
-                <li><a href="detectors.html">Детекторы</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+    <!-- меню -->
+    <div id="nav"></div>
 
 <main class="rent-container">
     <section class="rent-info">
@@ -109,7 +78,5 @@
     </section>
 </main>
 
-    <footer>
-        <p>&copy; 2025 GroteskStalker PvE | 
-        <a href="https://discord.gg/P7NQfqMWRq" target="_blank" class="footer-button">Discord</a></p>
-    </footer>
+    <!-- футер -->
+    <div id="footer"></div>
