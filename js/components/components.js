@@ -4,29 +4,39 @@
 */
 
 document.addEventListener('DOMContentLoaded', () => {
-    const loadComponent = (selector, url) => {
+
+    const loadComponent = (selector, url, callback) => {
         const el = document.querySelector(selector);
         if (!el) return;
+
         fetch(url)
-            .then(res => res.text())
-            .then(html => el.innerHTML = html)
-            .then(() => {
-                if (selector === '#nav') highlightActiveTab();
+            .then(res => {
+                if (!res.ok) throw new Error(res.status);
+                return res.text();
+            })
+            .then(html => {
+                el.innerHTML = html;
+                if (callback) callback();
             })
             .catch(err => console.error(`Ошибка загрузки ${url}:`, err));
     };
 
-    loadComponent('#footer', '/components/footer.html');
-    loadComponent('#nav', '/components/nav.html');
-    loadComponent('#garland', '/components/garland.html');
+    // ВАЖНО: относительные пути от КОРНЯ ПРОЕКТА
+    loadComponent('#nav', 'components/nav.html', highlightActiveTab);
+    loadComponent('#footer', 'components/footer.html');
+    loadComponent('#garland', 'components/garland.html');
 
     function highlightActiveTab() {
-        const path = window.location.pathname.split("/").pop();
-        document.querySelectorAll('#nav a').forEach(a => {
-            if (a.getAttribute('href') === path) {
-                a.classList.add('active');
-            } else {
-                a.classList.remove('active');
+        const current = location.pathname.split('/').pop() || 'index.html';
+
+        document.querySelectorAll('#nav a[href]').forEach(link => {
+            if (link.getAttribute('href') === current) {
+                link.classList.add('active');
+
+                const parent = link.closest('.dropdown');
+                if (parent) {
+                    parent.querySelector('a').classList.add('active');
+                }
             }
         });
     }
