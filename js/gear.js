@@ -2,10 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const jsonFiles = {
     "Combat": "data/gear/Combat.json",
     "Scientific": "data/gear/Scientific.json",
-    "Secretive": "data/gear/Secretive.json"
+    "Secretive": "data/gear/Secretive.json",
+    "Backpacks": "data/gear/Backpacks.json"
   };
 
   const categoryNames = {
+    "Backpacks": "Рюкзаки",
     "Combat": "Боевой",
     "Scientific": "Научный",
     "Secretive": "Скрытный",
