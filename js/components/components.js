@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
             .catch(err => console.error(`Ошибка загрузки ${url}:`, err));
     };
 
-    loadComponent('#footer', './components/footer.html');
-    loadComponent('#nav', './components/nav.html');
-    loadComponent('#garland', './components/garland.html');
+    loadComponent('#footer', '/components/footer.html');
+    loadComponent('#nav', '/components/nav.html');
+    loadComponent('#garland', '/components/garland.html');
 
     function highlightActiveTab() {
         const path = window.location.pathname.split("/").pop();
