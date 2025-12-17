@@ -14,6 +14,7 @@ const artifactPropertiesDiv = document.getElementById("artifact-properties");
 const saveButton = document.getElementById("save-build");
 const loadButton = document.getElementById("load-build");
 const clearButton = document.getElementById("clear-build");
+const shareButton = document.getElementById("share-build");
 
 const artifactModal = document.getElementById("artifact-modal");
 const openModalBtn = document.getElementById("confirm-artifact");
@@ -32,20 +33,25 @@ let allArtifacts = [];
 const maxTier = 4;
 const minTier = 1;
 
-// Загружаем JSON
+// ------------------ Загрузка JSON ------------------
 fetch("data/artefact/art.json")
   .then(res => res.json())
   .then(data => { 
     allArtifacts = data;
     populateArtifactModal(allArtifacts);
+
+    // Если в URL есть сборка, загружаем её после JSON
+    const params = new URLSearchParams(window.location.search);
+    const buildStr = params.get("b");
+    if(buildStr) deserializeBuild(buildStr);
   });
 
-// Модальное окно
+// ------------------ Модальное окно ------------------
 openModalBtn.onclick = () => artifactModal.style.display = "flex";
 modalCloseBtn.onclick = () => artifactModal.style.display = "none";
 window.onclick = e => { if(e.target === artifactModal) artifactModal.style.display = "none"; };
 
-// Поиск артефактов
+// ------------------ Поиск артефактов ------------------
 artifactSearch.addEventListener("input", () => {
   const query = artifactSearch.value.toLowerCase();
   Array.from(artifactListEl.children).forEach(item => {
@@ -54,14 +60,14 @@ artifactSearch.addEventListener("input", () => {
   });
 });
 
-// Очистка сборки
+// ------------------ Очистка сборки ------------------
 clearButton.addEventListener("click", () => {
   selectedArtifacts = [];
   artifactActive = null;
   updateSelectedList();
 });
 
-// Сохранение сборки
+// ------------------ Сохранение / Загрузка ------------------
 saveButton.addEventListener("click", () => {
   if(selectedArtifacts.length){
     localStorage.setItem("savedBuild", JSON.stringify(selectedArtifacts));
@@ -69,18 +75,15 @@ saveButton.addEventListener("click", () => {
   } else alert("Нет артефактов для сохранения.");
 });
 
-// Загрузка сборки
 loadButton.addEventListener("click", () => {
   const saved = localStorage.getItem("savedBuild");
   if(saved){
-    selectedArtifacts = JSON.parse(saved);
-    artifactActive = selectedArtifacts[selectedArtifacts.length-1] || null;
-    updateSelectedList();
+    deserializeBuildFromLocal(saved);
     alert("Сборка загружена!");
   } else alert("Нет сохранённых сборок.");
 });
 
-// Добавление артефакта
+// ------------------ Добавление артефакта ------------------
 function addArtifact(name){
   const artifactData = allArtifacts.find(a => a["Имя"] === name);
   if(!artifactData) return;
@@ -90,7 +93,7 @@ function addArtifact(name){
   updateSelectedList();
 }
 
-// Обновление списка выбранных артефактов
+// ------------------ Обновление списка выбранных артефактов ------------------
 function updateSelectedList(){
   selectedArtifactsList.innerHTML = "";
   selectedArtifacts.forEach(art => {
@@ -109,7 +112,7 @@ function updateSelectedList(){
     };
 
     const artData = allArtifacts.find(a => a["Имя"] === art.name);
-    const variant = artData["Варианты"].find(v => v["Тир"] === art.tier) || artData["Варианты"][0];
+    const variant = artData ? (artData["Варианты"].find(v => v["Тир"] === art.tier) || artData["Варианты"][0]) : null;
 
     const imgSmall = document.createElement("img");
     imgSmall.src = variant?.images?.[0] || "";
@@ -148,7 +151,7 @@ function updateSelectedList(){
   updateControls();
 }
 
-// Показ свойств артефакта
+// ------------------ Показ свойств артефакта ------------------
 function showArtifactProperties(art){
   const data = allArtifacts.find(a => a["Имя"] === art.name);
   if(!data) return;
@@ -188,7 +191,7 @@ function showArtifactProperties(art){
   updateControls();
 }
 
-// Управление тир/копиями
+// ------------------ Управление тир/копиями ------------------
 function updateControls(){
   const controls = [tierUpBtn, tierDownBtn, copiesUpBtn, copiesDownBtn];
   if(!artifactActive){
@@ -206,7 +209,7 @@ tierDownBtn.onclick = ()=>{ if(artifactActive && artifactActive.tier>minTier) ar
 copiesUpBtn.onclick = ()=>{ if(artifactActive) artifactActive.copies++; updateSelectedList(); };
 copiesDownBtn.onclick = ()=>{ if(artifactActive && artifactActive.copies>1) artifactActive.copies--; updateSelectedList(); };
 
-// Расчёт характеристик
+// ------------------ Расчёт характеристик ------------------
 function calculateStats(){
   const result = {};
   let radiationOutput = 0, radiationAccum = 0;
@@ -231,7 +234,7 @@ function calculateStats(){
   displayResults(result);
 }
 
-// Показ результатов
+// ------------------ Показ результатов ------------------
 function displayResults(stats){
   resultDiv.innerHTML="";
   for(let key in stats){
@@ -245,7 +248,7 @@ function displayResults(stats){
   }
 }
 
-// Заполнение модалки
+// ------------------ Заполнение модалки ------------------
 function populateArtifactModal(artifacts){
   artifactListEl.innerHTML="";
   artifacts.forEach(a=>{
@@ -274,3 +277,75 @@ function populateArtifactModal(artifacts){
     artifactListEl.appendChild(div);
   });
 }
+
+// ------------------ URL-сборка / Поделиться ------------------
+// Кодирование сборки в Base64URL
+function serializeBuild() {
+    const buildData = {
+        v: 1,
+        a: selectedArtifacts.map(a => [a.name, a.tier, a.copies])
+    };
+    const json = JSON.stringify(buildData);
+    return btoa(unescape(encodeURIComponent(json)))
+           .replace(/\+/g, "-")
+           .replace(/\//g, "_")
+           .replace(/=+$/, "");
+}
+
+// Декодирование сборки из Base64URL
+function deserializeBuild(str) {
+    try {
+        const base64 = str.replace(/-/g, "+").replace(/_/g, "/");
+        const json = decodeURIComponent(escape(atob(base64)));
+        const data = JSON.parse(json);
+
+        if(!data.a || !Array.isArray(data.a)) throw "Некорректные данные сборки";
+
+        selectedArtifacts = data.a.map(([name,tier,copies]) => {
+            const artData = allArtifacts.find(a => a["Имя"] === name);
+            if(!artData){
+                console.warn(`Артефакт "${name}" не найден, пропущен`);
+                return null;
+            }
+            const variant = artData["Варианты"].find(v => v["Тир"]===tier) || artData["Варианты"][0];
+            return {id: Date.now()+Math.random(), name, tier: variant["Тир"], copies};
+        }).filter(a => a!==null);
+
+        artifactActive = selectedArtifacts[selectedArtifacts.length-1] || null;
+        updateSelectedList();
+    } catch(e){
+        alert("Ошибка импорта сборки!");
+        console.error(e);
+    }
+}
+
+// Декодирование локальной сборки
+function deserializeBuildFromLocal(str){
+    try {
+        const data = JSON.parse(str);
+        selectedArtifacts = data.map(a => {
+            const artData = allArtifacts.find(x => x["Имя"] === a.name);
+            if(!artData) return null;
+            const variant = artData["Варианты"].find(v=>v["Тир"]===a.tier)||artData["Варианты"][0];
+            return {id: Date.now()+Math.random(), name:a.name, tier: variant["Тир"], copies:a.copies};
+        }).filter(a=>a!==null);
+        artifactActive = selectedArtifacts[selectedArtifacts.length-1]||null;
+        updateSelectedList();
+    } catch(e){
+        alert("Ошибка загрузки сборки из локального хранилища!");
+        console.error(e);
+    }
+}
+
+// Генерация ссылки для обмена
+function generateShareLink() {
+    const buildStr = serializeBuild();
+    return `${window.location.origin}${window.location.pathname}?b=${buildStr}`;
+}
+
+shareButton.onclick = () => {
+    const url = generateShareLink();
+    navigator.clipboard.writeText(url).then(() => {
+        alert("Ссылка скопирована в буфер обмена!");
+    });
+};
