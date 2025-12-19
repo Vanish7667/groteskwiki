@@ -12,7 +12,7 @@
     margin: 20px auto 0 auto; /* убрали верхний margin или поставили 0 сверху */
     gap: 20px;
 
-    --container-height: 685px;
+    --container-height: 693px;
     height: var(--container-height);
 }
 

@@ -78,6 +78,7 @@ h3 {
     margin-right: 0;
     font-size: 15px;
     color: #e0e0e0;
+    min-height: 639px;
 }
 
 .artifact-column + .artifact-column {

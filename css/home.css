@@ -9,6 +9,7 @@
     max-width: 1400px;
     margin: 20px auto;
     gap: 20px;
+    min-height: 693px;
 }
 
 /* Левый и правый сайдбары */

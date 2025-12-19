@@ -21,7 +21,7 @@ body {
     max-width: 1400px;       /* шире */
     margin: 20px auto;
     padding: 0;              /* убрали лишние паддинги */
-    min-height: 685px;        /* убрали растяжение под экран */
+    min-height: 693px;        /* убрали растяжение под экран */
 }
 
 /* ======================= */
@@ -35,7 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    min-height: 685px;
+    min-height: 693px;
 }
 
 /* Заголовки */
