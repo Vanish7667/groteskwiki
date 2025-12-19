@@ -11,6 +11,13 @@
     box-sizing: border-box;
 }
 
+.mailbox-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px; /* отступ слева и справа */
+}
+
 /* ---------- Основной блок с правилами и фото ---------- */
 .mailbox-block {
     display: grid;

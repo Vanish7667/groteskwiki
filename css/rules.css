@@ -4,13 +4,40 @@
 */
 
 .rules-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 20px auto;
     padding: 20px;
     background-color: #2a2a2a;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
     font-family: 'Share Tech Mono', monospace;
+
+    flex: 1;
+    overflow-y: auto;
+}
+
+.rules-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.rules-container::-webkit-scrollbar-track {
+    background: #1c1c1c;
+    border-radius: 4px;
+}
+
+.rules-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ffb000, #c48a00);
+    border-radius: 4px;
+}
+
+.rules-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #ffd36a, #ffb000);
+}
+
+/* Firefox */
+.rules-container {
+    scrollbar-width: thin;
+    scrollbar-color: #ffb000 #1c1c1c;
 }
 
 .rules-list {
@@ -34,25 +61,6 @@
     background-color: #4d1c1c;
     color: #ffb3b3;
     border-color: #ff6b6b;
-}
-
-/* тултип */
-.rules-list li .tooltip {
-    visibility: hidden;
-    width: 220px;
-    background-color: #555;
-    color: #fff;
-    text-align: left;
-    padding: 5px 10px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 105%;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-    font-size: 13px;
 }
 
 .rules-list li.popular:hover .tooltip {

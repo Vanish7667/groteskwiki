@@ -3,11 +3,18 @@
   All Rights Reserved
 */
 
+/* ======================
+   Детекторы: скролл сетки
+====================== */
+
 .furniture-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 20px;
     padding: 15px;
+
+    flex: 1;
+    overflow-y: auto;
 }
 main {
     margin-top: 20px; /* расстояние от меню до контейнера */
@@ -126,4 +133,14 @@ main {
 .modal-window p {
     color: #ccc;
     font-size: 14px;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }

@@ -3,12 +3,46 @@
   All Rights Reserved
 */
 
+main {
+    margin-top: 20px;
+}
+
 /* Сетки и карточки */
 .kits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 16px;
-    margin-top: 12px;
+    gap: 20px;
+    margin-top: 15px;
+
+    overflow-y: auto;
+    padding-right: 6px;
+
+    align-content: start; /* карточки не растягиваются */
+}
+
+/* Скролл */
+.kits-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.kits-grid::-webkit-scrollbar-track {
+    background: #1c1c1c;
+    border-radius: 4px;
+}
+
+.kits-grid::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ffb000, #c48a00);
+    border-radius: 4px;
+}
+
+.kits-grid::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #ffd36a, #ffb000);
+}
+
+/* Firefox */
+.kits-grid {
+    scrollbar-width: thin;
+    scrollbar-color: #ffb000 #1c1c1c;
 }
 
 .kit-card {
@@ -19,6 +53,7 @@
     text-align: center;
     cursor: pointer;
     transition: all 0.25s ease;
+    margin-top: 5px;
 }
 
 .kit-card:hover {
